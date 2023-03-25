@@ -10,11 +10,11 @@ function mainNavigation() {
         <Image src={codeIcon} alt="htmlTagIcon" />
       </div>
       <ul className={classes.links}>
-        <li>01 About me</li>
+        <li className={classes["try-looks"]}>01 About me</li>
         <li>02 Skills</li>
         <li>03 Projects</li>
         <li>04 Contact me</li>
-        <button>Resume</button>
+        <button className={classes["resume-button"]}>Resume</button>
       </ul>
     </div>
   );

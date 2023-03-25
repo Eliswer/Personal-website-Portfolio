@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 
+:root {
+  --foam: #dff4fd;
+  --neon-green: #02ff00;
+  --bg-black: #131313;
+  --bg-purple: #30102a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
