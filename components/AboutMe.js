@@ -1,7 +1,13 @@
-import React from "react";
+import Wrapper from "./layout/Wrapper";
 
 function AboutMe() {
-  return <div>AboutMe</div>;
+  return (
+    <>
+      <Wrapper margin="3.5rem">
+        <div>About me</div>
+      </Wrapper>
+    </>
+  );
 }
 
 export default AboutMe;

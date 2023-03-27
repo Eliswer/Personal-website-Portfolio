@@ -5,10 +5,17 @@
   --neon-green: #02ff00;
   --bg-black: #131313;
   --bg-purple: #30102a;
-  --pure-black: #0000;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(20deg, #dff4fd 0%, #02ff00 100%) 113% 155%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
