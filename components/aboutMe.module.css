@@ -1,0 +1,46 @@
+.wrapper {
+  height: 100%;
+  background: rgb(48, 16, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 16, 42, 1) 45%,
+    rgba(19, 19, 19, 1) 100%
+  );
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  height: 75%;
+  border: 1px solid red;
+}
+
+.picture {
+  width: 40%;
+}
+
+.info {
+  width: 60%;
+}
+
+.description {
+  border: 1px solid white;
+  height: 100%;
+}
+
+.img-wrapper {
+  position: absolute;
+  margin: 20px;
+  z-index: 10;
+}
+
+.img-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 185px;
+  left: 126px;
+  width: 220px;
+  height: 215px;
+  border: 2px solid var(--foam);
+  z-index: -1;
+}
