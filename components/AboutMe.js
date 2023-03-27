@@ -16,7 +16,14 @@ function AboutMe() {
             </div>
             <div className={classes.info}>About me</div>
           </div>
-          <div className={classes.description}>Description</div>
+          <div className={classes.description}>
+            <p className="gradient-text">Hi, my name is</p>
+            <h1 className="gradient-text">Eliška Šindelářová</h1>
+            <p className="gradient-text">
+              A high school graduate looking to start her journey as a
+            </p>
+            <h2 className="gradient-text">Junior front end developer</h2>
+          </div>
         </div>
       </Wrapper>
     </>
