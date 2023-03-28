@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
 
 :root {
   --foam: #dff4fd;
@@ -14,8 +14,9 @@
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(276deg, #dff4fd 42%, #02ff00 67%) -47% 64%/98%
-    75%;
+  background: -webkit-linear-gradient(279deg, #dff4fd 34%, #02ff00 83%) -47% 64%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
 }

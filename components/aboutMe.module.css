@@ -10,37 +10,108 @@
 
 .top {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   height: 75%;
-  border: 1px solid red;
 }
 
 .picture {
   width: 40%;
-}
-
-.info {
-  width: 60%;
-}
-
-.description {
-  border: 1px solid white;
-  height: 100%;
+  position: relative;
 }
 
 .img-wrapper {
   position: absolute;
-  margin: 20px;
   z-index: 99;
+  top: 6.56rem;
+  left: 9.5rem;
 }
 
 .img-wrapper:before {
   content: "";
   position: absolute;
-  top: 185px;
-  left: 126px;
+  top: 23px;
+  left: 23px;
   width: 220px;
   height: 215px;
   border: 2px solid var(--foam);
   z-index: -1;
+}
+
+.img-wrapper:after {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  width: 220px;
+  height: 215px;
+  border: 2px solid var(--foam);
+  z-index: -1;
+}
+
+.info {
+  width: 60%;
+  position: relative;
+}
+
+.info p {
+  font-size: 1rem;
+  position: absolute;
+}
+.info h2,
+.info h1 {
+  position: absolute;
+  font-weight: normal;
+}
+
+.info h1 {
+  font-size: 2.8rem;
+}
+
+.info h2 {
+  font-size: 2.2rem;
+}
+
+.t1 {
+  top: 6rem;
+  left: 2rem;
+}
+
+.t2 {
+  top: 7.75rem;
+  left: 5.5rem;
+}
+
+.t3 {
+  top: 13.81rem;
+  left: 5rem;
+}
+
+.t4 {
+  top: 15.56rem;
+  left: 10.1rem;
+}
+
+.description {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.description p {
+  font-family: "Fuzzy Bubbles", cursive;
+  color: var(--foam);
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 320px 700px 320px 0;
+  border-color: transparent transparent transparent transparent;
 }
