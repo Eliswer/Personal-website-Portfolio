@@ -23,17 +23,17 @@
 .img-wrapper {
   position: absolute;
   z-index: 99;
-  top: 6.56rem;
-  left: 9.5rem;
+  top: 8.56rem;
+  left: 11.5rem;
 }
 
 .img-wrapper:before {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 23px;
-  width: 220px;
-  height: 215px;
+  top: 53px;
+  left: 53px;
+  width: 250px;
+  height: 250px;
   border: 2px solid var(--foam);
   z-index: -1;
 }
@@ -41,10 +41,10 @@
 .img-wrapper:after {
   content: "";
   position: absolute;
-  top: -23px;
-  left: -23px;
-  width: 220px;
-  height: 215px;
+  top: -33px;
+  left: -33px;
+  width: 250px;
+  height: 250px;
   border: 2px solid var(--foam);
   z-index: -1;
 }
@@ -55,41 +55,41 @@
 }
 
 .info p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: absolute;
 }
 .info h2,
 .info h1 {
   position: absolute;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .info h1 {
-  font-size: 2.8rem;
+  font-size: 3.3rem;
 }
 
 .info h2 {
-  font-size: 2.2rem;
+  font-size: 2.7rem;
 }
 
 .t1 {
-  top: 6rem;
+  top: 10.8rem;
   left: 2rem;
 }
 
 .t2 {
-  top: 7.75rem;
+  top: 12.75rem;
   left: 5.5rem;
 }
 
 .t3 {
-  top: 13.81rem;
+  top: 20rem;
   left: 5rem;
 }
 
 .t4 {
-  top: 15.56rem;
-  left: 10.1rem;
+  top: 21.76rem;
+  left: 14.5rem;
 }
 
 .description {
@@ -105,13 +105,8 @@
   color: var(--foam);
 }
 
-.video {
+.triangleWrapper {
   position: absolute;
   right: 0;
-  top: 60px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 320px 700px 320px 0;
-  border-color: transparent transparent transparent transparent;
+  border: transparent;
 }

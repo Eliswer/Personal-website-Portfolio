@@ -3,28 +3,25 @@ import classes from "./aboutMe.module.css";
 import Image from "next/image";
 
 import Me from "../public/imgs/mypicture.svg";
-import PurpleBg from "../public/imgs/purple-bg.png";
+import Triangle from "../public/imgs/PurpleTriangleWider.png";
 
 function AboutMe() {
   return (
     <>
       <Wrapper margin="3.4rem">
+        <div className={classes.triangleWrapper}>
+          <Image
+            src={Triangle}
+            width={600}
+            height={650}
+            alt="Purple Triangle"
+          />
+        </div>
         <div className={classes.wrapper}>
-          <div className={classes.video}>
-            <video
-              className={classes.autoplay}
-              autoplay
-              loop
-              muted
-              poster={"./public/imgs/purple-bg.png"}
-            >
-              <source src="" />
-            </video>
-          </div>
           <div className={classes.top}>
             <div className={classes.picture}>
               <div className={classes["img-wrapper"]}>
-                <Image src={Me} width="219" alt="my-picture" />
+                <Image src={Me} width={280} alt="my-picture" />
               </div>
             </div>
             <div className={classes.info}>
