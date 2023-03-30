@@ -100,6 +100,14 @@
   position: relative;
 }
 
+.description:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  border-bottom: 1px solid var(--foam);
+  width: 85%;
+}
+
 .description p {
   font-family: "Fuzzy Bubbles", cursive;
   color: var(--foam);
@@ -109,4 +117,5 @@
   position: absolute;
   right: 0;
   border: transparent;
+  mix-blend-mode: color-dodge;
 }

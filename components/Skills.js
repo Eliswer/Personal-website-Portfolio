@@ -1,5 +1,6 @@
 import Wrapper from "./layout/Wrapper";
 import classes from "./skills.module.css";
+import Heading from "./Heading";
 
 const languagesUrls = [
   { alt: "Html logo", url: "" },
@@ -44,7 +45,11 @@ const softwareUrls = [
 function Skills(props) {
   return (
     <Wrapper>
-      <div className={classes.wrapper}>Skills</div>
+      <div className={classes.wrapper}>
+        <div className={classes.top}>
+          <Heading number="02" title="Skills" />
+        </div>
+      </div>
     </Wrapper>
   );
 }

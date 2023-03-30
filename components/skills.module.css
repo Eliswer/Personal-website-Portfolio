@@ -6,4 +6,6 @@
     rgba(19, 19, 19, 1) 35%,
     rgba(48, 16, 42, 1) 100%
   );
+  display: flex;
+  flex-direction: column;
 }
