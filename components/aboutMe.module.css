@@ -111,6 +111,7 @@
 .description p {
   font-family: "Fuzzy Bubbles", cursive;
   color: var(--foam);
+  margin: 0 20px;
 }
 
 .triangleWrapper {

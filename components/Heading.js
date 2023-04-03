@@ -5,12 +5,13 @@ import Triangle from "../public/imgs/PurpleTriangleHeading.png";
 
 function Heading({ number, title }) {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <div className={classes.triangleWrapper}>
         <Image src={Triangle} width={750} />
       </div>
       <h2 className={`${classes.title} gradient-text`}>
-        {number} {title}
+        <span className={classes["title-number"]}>{number}</span>
+        <span className={classes["title-text"]}>{title}</span>
       </h2>
     </div>
   );

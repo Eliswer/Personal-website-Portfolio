@@ -1,0 +1,19 @@
+.wrapper {
+  border-left: 1px solid var(--foam);
+  padding-left: 25px;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--foam);
+}

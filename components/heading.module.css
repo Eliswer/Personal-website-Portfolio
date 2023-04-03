@@ -3,6 +3,16 @@
 }
 
 .title {
-  top: 0;
-  left: 200px;
+  position: absolute;
+  top: 0px;
+  left: 530px;
+  font-weight: bold;
+}
+
+.title-number {
+  font-size: 9rem;
+}
+
+.title-text {
+  font-size: 3.5rem;
 }
