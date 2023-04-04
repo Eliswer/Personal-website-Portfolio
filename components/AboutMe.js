@@ -9,6 +9,7 @@ function AboutMe() {
   return (
     <>
       <Wrapper margin="3.4rem">
+        <div className="aboutMe"></div>
         <div className={classes.triangleWrapper}>
           <Image
             src={Triangle}

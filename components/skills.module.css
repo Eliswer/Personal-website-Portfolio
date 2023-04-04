@@ -3,11 +3,21 @@
   background: rgb(19, 19, 19);
   background: linear-gradient(
     0deg,
-    rgba(19, 19, 19, 1) 35%,
-    rgba(48, 16, 42, 1) 100%
+    rgba(19, 19, 19, 1) 23%,
+    rgba(48, 16, 42, 1) 67%
   );
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.bottom-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .bottom {
@@ -16,6 +26,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  width: 100%;
 }
 
 .b1 {
@@ -24,4 +35,13 @@
 
 .b2 {
   width: 72%;
+  align-self: flex-start;
+}
+
+.bottom-wrapper:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  border-bottom: 1px solid var(--foam);
+  width: 85%;
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 :root {
   --foam: #dff4fd;
@@ -19,4 +20,22 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+.aboutMe {
+  position: absolute;
+  top: -20px;
+}
+
+.skills {
+  position: absolute;
+  top: -53px;
+}
+
+.projects {
+  position: absolute;
+  top: -53px;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
 }

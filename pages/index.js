@@ -1,6 +1,7 @@
 import MainNavigation from "@/components/layout/MainNavigation";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <MainNavigation />
       <AboutMe />
       <Skills />
+      <Projects />
     </>
   );
 }

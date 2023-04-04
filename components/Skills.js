@@ -76,34 +76,37 @@ function Skills(props) {
   return (
     <Wrapper>
       <div className={classes.wrapper}>
-        <div className={classes.top}>
+        <div className="skills"></div>
+        <div className={`${classes.top}`}>
           <Heading number="02" title="Skills" />
         </div>
-        <div className={`${classes.bottom} ${classes.b1}`}>
-          <Technologies
-            techGroup={languagesUrls}
-            title={"Languages"}
-            width={16}
-          />
-          <Technologies
-            techGroup={backendTechnologiesUrls}
-            title={"Backend Technologies"}
-            width={16}
-          />
-          <Technologies techGroup={otherUrls} title={"Other"} width={20} />
-        </div>
-        <div className={`${classes.bottom} ${classes.b2}`}>
-          {" "}
-          <Technologies
-            techGroup={librariesFrameworksUrls}
-            title={"Libraries / Frameworks"}
-            width={16}
-          />
-          <Technologies
-            techGroup={softwareUrls}
-            title={"Software"}
-            width={23}
-          />
+        <div className={classes["bottom-wrapper"]}>
+          <div className={`${classes.bottom} ${classes.b1}`}>
+            <Technologies
+              techGroup={languagesUrls}
+              title={"Languages"}
+              width={16}
+            />
+            <Technologies
+              techGroup={backendTechnologiesUrls}
+              title={"Backend Technologies"}
+              width={16}
+            />
+            <Technologies techGroup={otherUrls} title={"Other"} width={20} />
+          </div>
+          <div className={`${classes.bottom} ${classes.b2}`}>
+            {" "}
+            <Technologies
+              techGroup={librariesFrameworksUrls}
+              title={"Libraries / Frameworks"}
+              width={16}
+            />
+            <Technologies
+              techGroup={softwareUrls}
+              title={"Software"}
+              width={23}
+            />
+          </div>
         </div>
       </div>
     </Wrapper>
