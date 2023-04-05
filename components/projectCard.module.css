@@ -1,0 +1,17 @@
+.wrapper {
+  border: 2px solid var(--foam);
+  height: 330px;
+  width: 85%;
+  margin: 10px 0;
+  background: rgb(48, 16, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 16, 42, 1) 0%,
+    rgba(38, 17, 34, 1) 100%
+  );
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}

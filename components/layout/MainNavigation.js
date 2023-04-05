@@ -71,12 +71,12 @@ function mainNavigation() {
               <a onClick={setSkillsToVisited}>02 Skills</a>
             </ScrollTo>
           </li>
-          <li>
+          <li className={visiting.projects ? `${classes.visiting}` : ""}>
             <ScrollTo selector={".projects"}>
               <a onClick={setProjectsToVisited}>03 Projects</a>
             </ScrollTo>
           </li>
-          <li>
+          <li className={visiting.contactMe ? `${classes.visiting}` : ""}>
             <ScrollTo selector={".contactMe"}>
               <a onClick={setContactMeToVisited}>04 Contact me</a>
             </ScrollTo>

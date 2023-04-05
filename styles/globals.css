@@ -35,6 +35,11 @@
 .projects {
   position: absolute;
   top: -53px;
+}
+
+.contactMe {
+  position: absolute;
+  top: -53px;
   border: 1px solid red;
   height: 20px;
   width: 20px;

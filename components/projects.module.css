@@ -6,4 +6,25 @@
     rgba(48, 16, 42, 1) 35%,
     rgba(19, 19, 19, 1) 100%
   );
+  position: relative;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66.5%;
+}
+
+.carousel-wrapper {
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.bottom:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  border-bottom: 1px solid var(--foam);
+  width: 85%;
 }
