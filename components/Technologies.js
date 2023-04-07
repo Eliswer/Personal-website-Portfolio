@@ -2,9 +2,17 @@ import classes from "./technologies.module.css";
 
 import Image from "next/image";
 
-function Skills({ techGroup, title, width }) {
+function Skills({ techGroup, title, width, bg }) {
   const renderedIcons = techGroup.map((icon) => {
-    return <Image src={icon.src} width={50} height={50} />;
+    return (
+      <Image
+        src={icon.src}
+        width={50}
+        height={50}
+        alt={icon.alt}
+        key={icon.alt}
+      />
+    );
   });
 
   return (

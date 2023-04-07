@@ -1,0 +1,19 @@
+.footer {
+  height: 120px;
+  padding: 20px;
+  background-color: var(--bg-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--foam);
+}
+
+.footer:after {
+  position: absolute;
+  content: "";
+  top: -53px;
+  height: 50px;
+  border-bottom: 1px solid var(--foam);
+  width: 85%;
+}

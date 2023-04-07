@@ -40,7 +40,9 @@
 .contactMe {
   position: absolute;
   top: -53px;
-  border: 1px solid red;
-  height: 20px;
-  width: 20px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }

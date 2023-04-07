@@ -1,5 +1,5 @@
 .wrapper {
-  border-left: 1px solid var(--foam);
+  border-left: 2px solid var(--foam);
   padding-left: 25px;
   height: 5.5rem;
   display: flex;

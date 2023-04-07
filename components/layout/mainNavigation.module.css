@@ -94,3 +94,9 @@
   width: 0%; /*calc with Js !!!!!!!!!!*/
   margin: 8px 0 0 8px;
 }
+
+@media only screen and (max-width: 992px) {
+  .nav-bottom:before {
+    min-width: 60%;
+  }
+}

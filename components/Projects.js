@@ -21,27 +21,22 @@ const renderedProjects = projects.map((project) => {
   return <ProjectCard title={project.title} img={project.img} />;
 });
 
+const arrowStyle = {
+  background: "none",
+  border: "none",
+  height: "100%",
+  width: "55px",
+  cursor: "pointer",
+};
+
 const leftArrow = (
-  <button
-    style={{
-      background: "none",
-      border: "none",
-      height: "100%",
-      width: "55px",
-    }}
-  >
+  <button style={arrowStyle}>
     <Image src={ArrowLeft} />
   </button>
 );
+
 const rightArrow = (
-  <button
-    style={{
-      background: "none",
-      border: "none",
-      height: "100%",
-      width: "55px",
-    }}
-  >
+  <button style={arrowStyle}>
     <Image src={ArrowRight} />
   </button>
 );

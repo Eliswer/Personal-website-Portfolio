@@ -2,3 +2,9 @@
   height: 41.65rem;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    height: 34.8rem;
+  }
+}

@@ -11,18 +11,13 @@ function AboutMe() {
       <Wrapper margin="3.4rem">
         <div className="aboutMe"></div>
         <div className={classes.triangleWrapper}>
-          <Image
-            src={Triangle}
-            width={600}
-            height={650}
-            alt="Purple Triangle"
-          />
+          <Image src={Triangle} alt="Purple Triangle" fill />
         </div>
         <div className={classes.wrapper}>
           <div className={classes.top}>
             <div className={classes.picture}>
               <div className={classes["img-wrapper"]}>
-                <Image src={Me} width={280} alt="my-picture" />
+                <Image src={Me} alt="my-picture" fill />
               </div>
             </div>
             <div className={classes.info}>

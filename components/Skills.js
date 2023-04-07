@@ -100,6 +100,7 @@ function Skills(props) {
               techGroup={librariesFrameworksUrls}
               title={"Libraries / Frameworks"}
               width={16}
+              bg="white"
             />
             <Technologies
               techGroup={softwareUrls}

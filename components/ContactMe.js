@@ -17,7 +17,22 @@ function ContactMe() {
           <Heading number="04" title="Contact me" />
         </div>
         <div className={classes.bottom}>
-          <div className={`${classes["contact-form"]} ${classes.bg}`}>..</div>
+          <form className={`${classes["contact-form"]} ${classes.bg}`}>
+            <div className={classes["input-wrapper"]}>
+              <label for="name">Enter your name</label>
+              <input id="name" className={classes["shared-styling"]}></input>
+            </div>
+            <div className={classes["input-wrapper"]}>
+              <label for="email">Enter your email</label>
+              <input
+                type="email"
+                id="email"
+                className={classes["shared-styling"]}
+              ></input>
+            </div>
+            <textarea className={classes["shared-styling"]}></textarea>
+            <button>Send Email</button>
+          </form>
           <div className={`${classes["contact-info"]} ${classes.bg}`}>
             <div className={classes.line}>
               <div className={classes["title-wrapper"]}>
@@ -44,7 +59,7 @@ function ContactMe() {
             </div>
           </div>
           <div className={classes["img-wrapper"]}>
-            <Image src={PurpleBg} width={1520} height={300} />
+            <Image src={PurpleBg} width={1519} height={300} />
           </div>
         </div>
       </div>
