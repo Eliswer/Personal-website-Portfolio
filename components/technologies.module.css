@@ -1,6 +1,7 @@
 .wrapper {
   border-left: 2px solid var(--foam);
   padding-left: 25px;
+  padding-right: 5px;
   height: 5.5rem;
   display: flex;
   flex-direction: column;

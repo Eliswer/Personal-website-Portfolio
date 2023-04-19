@@ -75,6 +75,8 @@
   z-index: 0;
   top: 60px;
   mix-blend-mode: color-dodge;
+  width: 1519px;
+  height: 300px;
 }
 
 .contact-form label {
@@ -99,7 +101,6 @@
   border: 2px solid var(--foam);
   resize: none;
   height: 136px;
-  width: 362px;
   width: 100%;
   padding: 5px;
 }
@@ -121,4 +122,27 @@
   flex-direction: column;
   justify-content: space-between;
   height: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-info {
+    width: 306px;
+    height: 250px;
+    left: 76px;
+  }
+
+  .contact-form {
+    width: 420px;
+    height: 340px;
+    right: 76px;
+  }
+
+  .contact-form textarea {
+    height: 76px;
+  }
+
+  .img-wrapper {
+    width: 1519px;
+    height: 250px;
+  }
 }

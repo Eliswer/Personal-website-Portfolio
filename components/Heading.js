@@ -7,7 +7,7 @@ function Heading({ number, title }) {
   return (
     <div style={{ position: "relative" }}>
       <div className={classes.triangleWrapper}>
-        <Image src={Triangle} width={750} />
+        <Image src={Triangle} alt="purple triangle" fill />
       </div>
       <h2 className={`${classes.title} gradient-text`}>
         <span className={classes["title-number"]}>{number}</span>

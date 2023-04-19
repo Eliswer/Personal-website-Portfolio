@@ -45,3 +45,9 @@
   border-bottom: 1px solid var(--foam);
   width: 85%;
 }
+
+@media only screen and (max-width: 992px) {
+  .b2 {
+    width: 75%;
+  }
+}

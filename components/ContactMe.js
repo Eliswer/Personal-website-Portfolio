@@ -59,7 +59,7 @@ function ContactMe() {
             </div>
           </div>
           <div className={classes["img-wrapper"]}>
-            <Image src={PurpleBg} width={1519} height={300} />
+            <Image src={PurpleBg} alt="Purple background" fill />
           </div>
         </div>
       </div>

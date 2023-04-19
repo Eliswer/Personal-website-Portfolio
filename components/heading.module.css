@@ -1,5 +1,8 @@
 .triangleWrapper {
+  position: relative;
   mix-blend-mode: color-dodge;
+  width: 750px;
+  height: 250px;
 }
 
 .title {
@@ -15,4 +18,24 @@
 
 .title-text {
   font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .triangleWrapper {
+    width: 650px;
+    height: 200px;
+  }
+
+  .title-number {
+    font-size: 8rem;
+  }
+
+  .title-text {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    left: 450px;
+    top: -10px;
+  }
 }

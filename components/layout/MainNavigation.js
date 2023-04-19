@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./mainNavigation.module.css";
 
 import Image from "next/image";
 import codeIcon from "../../public/icons/codeIcon.svg";
 
 import ScrollTo from "react-scroll-into-view";
+import useReadingProgress from "../hooks/useReadingProgress";
 
 function mainNavigation() {
+  const completion = useReadingProgress();
+
   const [visiting, setVisited] = useState({
     aboutMe: true,
     skills: false,
@@ -87,7 +90,10 @@ function mainNavigation() {
       <div className={classes["nav-bottom"]}>
         <div className={classes["scroll-bar-fixed"]}></div>
         <h1 className="gradient-text">Developer for: 8m 10d</h1>
-        <div className={classes["scroll-bar"]}></div>
+        <div
+          className={classes["scroll-bar"]}
+          style={{ transform: `translateX( ${completion - 100}%)` }}
+        ></div>
       </div>
     </>
   );
