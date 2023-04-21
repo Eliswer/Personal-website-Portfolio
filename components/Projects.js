@@ -9,16 +9,57 @@ import Image from "next/image";
 import ArrowLeft from "../public/icons/carrousel-arrows/arrow-left.svg";
 import ArrowRight from "../public/icons/carrousel-arrows/arrow-right.svg";
 
+import calculator from "../public/imgs/projects-imgs/calculator.png";
+import placeholder from "../public/imgs/600x400.svg";
+
 const projects = [
-  { title: "Weather app", img: "" },
-  { title: "Calculator", img: "" },
-  { title: "To be added", img: "" },
-  { title: "To be added", img: "" },
-  { title: "To be added", img: "" },
+  {
+    title: "Weather app",
+    img: placeholder,
+    description: "",
+    githubLink: "https://github.com/Eliswer/Weather-app",
+    externalLink: "",
+  },
+  {
+    title: "Calculator",
+    img: calculator,
+    description: "Advanced calculator made with React",
+    githubLink: "https://github.com/Eliswer/Calculator-project",
+    externalLink: "https://react-calculator-dcknhdcbj-eliswer.vercel.app/",
+  },
+  {
+    title: "To be added",
+    img: placeholder,
+    description: "",
+    githubLink: "",
+    externalLink: "",
+  },
+  {
+    title: "To be added",
+    img: placeholder,
+    description: "",
+    githubLink: "",
+    externalLink: "",
+  },
+  {
+    title: "To be added",
+    img: placeholder,
+    description: "Advanced calculator made with React",
+    githubLink: "",
+    externalLink: "",
+  },
 ];
 
 const renderedProjects = projects.map((project) => {
-  return <ProjectCard title={project.title} img={project.img} />;
+  return (
+    <ProjectCard
+      title={project.title}
+      projectImg={project.img}
+      description={project.description}
+      githubLink={project.githubLink}
+      externalLink={project.externalLink}
+    />
+  );
 });
 
 const arrowStyle = {
