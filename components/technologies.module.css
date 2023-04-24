@@ -18,3 +18,11 @@
   font-size: 1.2rem;
   color: var(--foam);
 }
+
+.img-wrapper {
+  transition: transform 250ms;
+}
+
+.img-wrapper:hover {
+  transform: translateY(-8px);
+}

@@ -35,41 +35,41 @@ import vegaspro from "../public/icons/icons-software/vegaspro.svg";
 import figma from "../public/icons/icons-software/figma.svg";
 
 const languagesUrls = [
-  { alt: "Html logo", src: html },
-  { alt: "Css logo", src: css },
-  { alt: "Sass logo", src: sass },
-  { alt: "JS logo", src: js },
+  { alt: "Html logo", src: html, level: "green-1" },
+  { alt: "Css logo", src: css, level: "green-1" },
+  { alt: "Sass logo", src: sass, level: "green-1" },
+  { alt: "JS logo", src: js, level: "blue-2" },
 ];
 
 const backendTechnologiesUrls = [
-  { alt: "Node JS logo", src: nodejs },
-  { alt: "Express logo", src: express },
-  { alt: "EJS logo", src: ejs },
-  { alt: "Rest API logo", src: restapi },
+  { alt: "Node JS logo", src: nodejs, level: "red-4" },
+  { alt: "Express logo", src: express, level: "red-4" },
+  { alt: "EJS logo", src: ejs, level: "red-4" },
+  { alt: "Rest API logo", src: restapi, level: "blue-2" },
 ];
 
 const otherUrls = [
-  { alt: "Git logo", src: git },
-  { alt: "Docker logo", src: docker },
-  { alt: "Command line logo", src: commandline },
-  { alt: "Redux Toolkit logo", src: reduxtoolkit },
-  { alt: "NPM logo", src: npm },
+  { alt: "Git logo", src: git, level: "yellow-3" },
+  { alt: "Docker logo", src: docker, level: "red-4" },
+  { alt: "Command line logo", src: commandline, level: "yellow-3" },
+  { alt: "Redux Toolkit logo", src: reduxtoolkit, level: "blue-2" },
+  { alt: "NPM logo", src: npm, level: "blue-2" },
 ];
 
 const librariesFrameworksUrls = [
-  { alt: "Styled Components logo", src: styledcomponents },
-  { alt: "Tailwind Css logo", src: tailwind },
-  { alt: "React logo", src: react },
-  { alt: "Next JS logo", src: nextjs },
+  { alt: "Styled Components logo", src: styledcomponents, level: "yellow-3" },
+  { alt: "Tailwind Css logo", src: tailwind, level: "blue-2" },
+  { alt: "React logo", src: react, level: "blue-2" },
+  { alt: "Next JS logo", src: nextjs, level: "blue-2" },
 ];
 
 const softwareUrls = [
-  { alt: "Postman logo", src: postman },
-  { alt: "Trello logo", src: trello },
-  { alt: "Github Desktop logo", src: github },
-  { alt: "Adobe After Effects logo", src: aftereffects },
-  { alt: "Sony Vegas pro", src: vegaspro },
-  { alt: "Figma logo", src: figma },
+  { alt: "Postman logo", src: postman, level: "blue-2" },
+  { alt: "Trello logo", src: trello, level: "green-1" },
+  { alt: "Github Desktop logo", src: github, level: "green-1" },
+  { alt: "Adobe After Effects logo", src: aftereffects, level: "green-1" },
+  { alt: "Sony Vegas pro", src: vegaspro, level: "green-1" },
+  { alt: "Figma logo", src: figma, level: "yellow-3" },
 ];
 
 function Skills(props) {
@@ -95,12 +95,10 @@ function Skills(props) {
             <Technologies techGroup={otherUrls} title={"Other"} width={20} />
           </div>
           <div className={`${classes.bottom} ${classes.b2}`}>
-            {" "}
             <Technologies
               techGroup={librariesFrameworksUrls}
               title={"Libraries / Frameworks"}
               width={16}
-              bg="white"
             />
             <Technologies
               techGroup={softwareUrls}

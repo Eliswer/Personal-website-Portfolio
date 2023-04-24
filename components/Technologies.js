@@ -2,16 +2,18 @@ import classes from "./technologies.module.css";
 
 import Image from "next/image";
 
-function Skills({ techGroup, title, width, bg }) {
+function Skills({ techGroup, title, width }) {
   const renderedIcons = techGroup.map((icon) => {
     return (
-      <Image
-        src={icon.src}
-        width={50}
-        height={50}
-        alt={icon.alt}
-        key={icon.alt}
-      />
+      <div className={classes["img-wrapper"]}>
+        <Image
+          src={icon.src}
+          width={50}
+          height={50}
+          alt={icon.alt}
+          key={icon.alt}
+        />
+      </div>
     );
   });
 
