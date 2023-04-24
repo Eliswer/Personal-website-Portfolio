@@ -12,6 +12,9 @@ import ArrowRight from "../public/icons/carrousel-arrows/arrow-right.svg";
 import calculator from "../public/imgs/projects-imgs/calculator.png";
 import placeholder from "../public/imgs/600x400.svg";
 
+import useMediaQuery from "./hooks/useMediaQuery";
+import { useEffect, useState } from "react";
+
 const projects = [
   {
     title: "Weather app",
@@ -44,7 +47,7 @@ const projects = [
   {
     title: "To be added",
     img: placeholder,
-    description: "Advanced calculator made with React",
+    description: "",
     githubLink: "",
     externalLink: "",
   },
@@ -83,6 +86,17 @@ const rightArrow = (
 );
 
 function Projects() {
+  const [projectsShown, setProjectsShown] = useState(0);
+  const isBreakpoint = useMediaQuery(992);
+
+  useEffect(() => {
+    if (isBreakpoint === true) {
+      setProjectsShown(2);
+    } else if (isBreakpoint === false) {
+      setProjectsShown(4);
+    }
+  }, []);
+
   return (
     <Wrapper>
       <div className={classes.wrapper}>

@@ -46,6 +46,24 @@
   width: 85%;
 }
 
+.wifi-wrapper {
+  position: absolute;
+  top: 70px;
+  right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  width: 360px;
+  color: var(--foam);
+}
+
+.wifi-wrapper p {
+  width: 200px;
+  opacity: 0.4;
+}
+
 @media only screen and (max-width: 992px) {
   .b2 {
     width: 75%;

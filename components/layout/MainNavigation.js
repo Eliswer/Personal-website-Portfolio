@@ -141,7 +141,6 @@ function mainNavigation() {
   };
 
   const developerFor = calcDate("07-01-2022", getTodaysDate());
-  console.log(developerFor);
 
   return (
     <>

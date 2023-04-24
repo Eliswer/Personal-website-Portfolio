@@ -1,7 +1,9 @@
+import { useState } from "react";
 import Wrapper from "./layout/Wrapper";
 import classes from "./skills.module.css";
 import Heading from "./Heading";
 import Technologies from "./Technologies";
+import Image from "next/image";
 
 /**
  * Importing my Icon svgs
@@ -72,7 +74,10 @@ const softwareUrls = [
   { alt: "Figma logo", src: figma, level: "yellow-3" },
 ];
 
-function Skills(props) {
+function Skills() {
+  const grey = "grey-0";
+  const [wifi, setWifi] = useState(grey);
+
   return (
     <Wrapper>
       <div className={classes.wrapper}>
@@ -86,26 +91,43 @@ function Skills(props) {
               techGroup={languagesUrls}
               title={"Languages"}
               width={16}
+              setWifi={setWifi}
             />
             <Technologies
               techGroup={backendTechnologiesUrls}
               title={"Backend Technologies"}
               width={16}
+              setWifi={setWifi}
             />
-            <Technologies techGroup={otherUrls} title={"Other"} width={20} />
+            <Technologies
+              techGroup={otherUrls}
+              title={"Other"}
+              width={20}
+              setWifi={setWifi}
+            />
           </div>
           <div className={`${classes.bottom} ${classes.b2}`}>
             <Technologies
               techGroup={librariesFrameworksUrls}
               title={"Libraries / Frameworks"}
               width={16}
+              setWifi={setWifi}
             />
             <Technologies
               techGroup={softwareUrls}
               title={"Software"}
               width={23}
+              setWifi={setWifi}
             />
           </div>
+        </div>
+        <div className={classes["wifi-wrapper"]}>
+          <Image
+            src={`/../public/imgs/wifi-strength/${wifi}.png`}
+            width={140}
+            height={120}
+          />
+          <p>Hover over icons to see connection strength</p>
         </div>
       </div>
     </Wrapper>
