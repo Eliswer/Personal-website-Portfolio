@@ -23,8 +23,8 @@
 .img-wrapper {
   position: absolute;
   z-index: 99;
-  top: 8.56rem;
-  left: 11.5rem;
+  top: 28%;
+  left: 30%;
   width: 280px;
   height: 280px;
 }
@@ -57,7 +57,7 @@
 }
 
 .info p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   position: absolute;
 }
 .info h2,
@@ -67,11 +67,11 @@
 }
 
 .info h1 {
-  font-size: 3.3rem;
+  font-size: 4vw;
 }
 
 .info h2 {
-  font-size: 2.7rem;
+  font-size: 3vw;
 }
 
 .t1 {
@@ -122,7 +122,7 @@
   right: 0;
   border: transparent;
   mix-blend-mode: color-dodge;
-  width: 700px;
+  width: 45vw;
   height: 650px;
 }
 

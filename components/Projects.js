@@ -3,16 +3,8 @@ import classes from "./projects.module.css";
 import Heading from "./layout/Heading";
 
 import ProjectCard from "./ProjectCard";
-import Image from "next/image";
-
-import ArrowLeft from "../public/icons/carrousel-arrows/arrow-left.svg";
-import ArrowRight from "../public/icons/carrousel-arrows/arrow-right.svg";
-
 import calculator from "../public/imgs/projects-imgs/calculator.png";
 import placeholder from "../public/imgs/600x400.svg";
-
-import { useEffect, useState } from "react";
-import useMediaQuery from "./hooks/useMediaQuery";
 
 const projects = [
   {
@@ -64,34 +56,7 @@ const renderedProjects = projects.map((project) => {
   );
 });
 
-const arrowStyle = {
-  background: "none",
-  border: "none",
-  height: "100%",
-  width: "55px",
-  cursor: "pointer",
-};
-
-const leftArrow = (
-  <button style={arrowStyle}>
-    <Image src={ArrowLeft} />
-  </button>
-);
-
-const rightArrow = (
-  <button style={arrowStyle}>
-    <Image src={ArrowRight} />
-  </button>
-);
-
 function Projects() {
-  const [projectsShown, setProjectsShown] = useState(4);
-  const breakPoint = useMediaQuery();
-
-  useEffect(() => {
-    setProjectsShown(breakPoint ? 2 : 4);
-  }, [breakPoint]);
-
   return (
     <Wrapper>
       <div className={classes.wrapper}>

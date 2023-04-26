@@ -101,6 +101,10 @@
     align-items: center;
   }
 
+  .b1 {
+    height: 100%;
+  }
+
   .wifi-wrapper {
     top: 20px;
     right: 60px;
