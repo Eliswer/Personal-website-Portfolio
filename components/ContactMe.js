@@ -1,6 +1,6 @@
 import Wrapper from "./layout/Wrapper";
 import classes from "./contactMe.module.css";
-import Heading from "./Heading";
+import Heading from "./layout/Heading";
 import Image from "next/image";
 
 import At from "../public/icons/contact-me/@.svg";

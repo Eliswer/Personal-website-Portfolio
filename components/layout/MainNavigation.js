@@ -177,7 +177,7 @@ function mainNavigation() {
         <h1 className="gradient-text">Developer for: {developerFor.result}</h1>
         <div
           className={classes["scroll-bar"]}
-          style={{ transform: `translateX( ${completion - 100}%)` }}
+          style={{ width: completion - 15 + "%" }}
         ></div>
       </div>
     </>

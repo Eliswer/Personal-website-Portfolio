@@ -1,10 +1,10 @@
 .wrapper {
-  height: 41.65rem;
+  height: 666.4px;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 992px) {
   .wrapper {
-    height: 34.8rem;
+    height: 556.8px;
   }
 }

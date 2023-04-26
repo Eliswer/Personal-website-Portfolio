@@ -17,7 +17,7 @@ function Skills({ techGroup, title, width, setWifi }) {
           setWifi(grey);
         }}
       >
-        <Image src={icon.src} width={50} height={50} alt={icon.alt} />
+        <Image src={icon.src} alt={icon.alt} fill />
       </div>
     );
   });

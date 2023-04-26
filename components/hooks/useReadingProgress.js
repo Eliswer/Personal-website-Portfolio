@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const useReadingProgress = () => {
   const [completion, setCompletion] = useState(0);
 
   useEffect(() => {
-    console.log(window);
     const updateScrollCompletion = () => {
       const currentProgress = window.scrollY;
-      const scrollHeight = document.scrollHeight - document.innerHeight;
+      const scrollHeight = document.body.scrollHeight - window.innerHeight;
       if (scrollHeight) {
         setCompletion(
           Number((currentProgress / scrollHeight).toFixed(2)) * 100

@@ -39,3 +39,23 @@
     top: -10px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .triangleWrapper {
+    width: 450px;
+    height: 200px;
+  }
+
+  .title-number {
+    font-size: 7.5rem;
+  }
+
+  .title-text {
+    font-size: 2rem;
+  }
+
+  .title {
+    left: 270px;
+    top: -5px;
+  }
+}

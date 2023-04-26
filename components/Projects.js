@@ -1,8 +1,7 @@
 import Wrapper from "./layout/Wrapper";
 import classes from "./projects.module.css";
-import Heading from "./Heading";
+import Heading from "./layout/Heading";
 
-import { Carousel } from "@trendyol-js/react-carousel";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 
@@ -12,8 +11,8 @@ import ArrowRight from "../public/icons/carrousel-arrows/arrow-right.svg";
 import calculator from "../public/imgs/projects-imgs/calculator.png";
 import placeholder from "../public/imgs/600x400.svg";
 
-import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
 
 const projects = [
   {
@@ -86,16 +85,12 @@ const rightArrow = (
 );
 
 function Projects() {
-  const [projectsShown, setProjectsShown] = useState(0);
-  const isBreakpoint = useMediaQuery(992);
+  const [projectsShown, setProjectsShown] = useState(4);
+  const breakPoint = useMediaQuery();
 
   useEffect(() => {
-    if (isBreakpoint === true) {
-      setProjectsShown(2);
-    } else if (isBreakpoint === false) {
-      setProjectsShown(4);
-    }
-  }, []);
+    setProjectsShown(breakPoint ? 2 : 4);
+  }, [breakPoint]);
 
   return (
     <Wrapper>
@@ -106,15 +101,7 @@ function Projects() {
         </div>
         <div className={classes.bottom}>
           <div className={`${classes["carousel-wrapper"]} carrousel-wrapper`}>
-            <Carousel
-              show={4}
-              slide={3}
-              swiping={true}
-              leftArrow={leftArrow}
-              rightArrow={rightArrow}
-            >
-              {renderedProjects}
-            </Carousel>
+            {renderedProjects}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import classes from "./heading.module.css";
 import Image from "next/image";
 
-import Triangle from "../public/imgs/PurpleTriangleHeading.png";
+import Triangle from "../../public/imgs/PurpleTriangleHeading.png";
 
 function Heading({ number, title }) {
   return (

@@ -92,12 +92,21 @@
   left: 252px;
   background-color: var(--foam);
   height: 5px;
-  width: 0%; /*calc with Js !!!!!!!!!!*/
   margin: 8px 0 0 8px;
 }
 
 @media only screen and (max-width: 992px) {
   .nav-bottom:before {
     min-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .links {
+    width: 500px;
+  }
+
+  .resume-button {
+    margin: 0 25px 0 25px;
   }
 }

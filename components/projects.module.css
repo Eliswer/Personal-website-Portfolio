@@ -17,8 +17,14 @@
 }
 
 .carousel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 360px;
   margin-bottom: 20px;
-  width: 75%;
+  width: 85%;
 }
 
 .bottom:after {

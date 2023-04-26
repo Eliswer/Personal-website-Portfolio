@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Wrapper from "./layout/Wrapper";
 import classes from "./skills.module.css";
-import Heading from "./Heading";
+import Heading from "./layout/Heading";
 import Technologies from "./Technologies";
 import Image from "next/image";
 
@@ -62,7 +62,7 @@ const librariesFrameworksUrls = [
   { alt: "Styled Components logo", src: styledcomponents, level: "yellow-3" },
   { alt: "Tailwind Css logo", src: tailwind, level: "blue-2" },
   { alt: "React logo", src: react, level: "blue-2" },
-  { alt: "Next JS logo", src: nextjs, level: "blue-2" },
+  { alt: "Next JS logo", src: nextjs, level: "yellow-3" },
 ];
 
 const softwareUrls = [
@@ -122,12 +122,14 @@ function Skills() {
           </div>
         </div>
         <div className={classes["wifi-wrapper"]}>
-          <Image
-            src={`/../public/imgs/wifi-strength/${wifi}.png`}
-            width={140}
-            height={120}
-          />
-          <p>Hover over icons to see connection strength</p>
+          <div className={classes["wifi-img-wrapper"]}>
+            <Image
+              src={`/../public/imgs/wifi-strength/${wifi}.png`}
+              fill
+              alt="wifi img"
+            />
+          </div>
+          <p>Hover over icons to see skill level</p>
         </div>
       </div>
     </Wrapper>
