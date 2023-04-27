@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .icons-wrapper {
@@ -30,6 +31,25 @@
   transform: translateY(-8px);
 }
 
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    height: 81px;
+  }
+  .title {
+    font-size: 1.9vw;
+  }
+
+  .img-wrapper {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 10px;
+  }
+
+  .icons-wrapper {
+    width: 23vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     height: 70px;
@@ -46,5 +66,20 @@
 
   .title {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    height: 12vw;
+  }
+
+  .img-wrapper {
+    height: 7vw;
+    margin: 3px;
+  }
+
+  .title {
+    font-size: 2.6vw;
   }
 }

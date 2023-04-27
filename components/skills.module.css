@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -48,50 +48,58 @@
 
 .wifi-wrapper {
   position: absolute;
-  top: 70px;
-  right: 150px;
+  top: 10%;
+  right: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 130px;
-  width: 360px;
+  height: 16vh;
+  width: 27.5vw;
   color: var(--foam);
 }
 
 .wifi-img-wrapper {
-  width: 140px;
-  height: 120px;
+  width: 11vw;
+  height: 9vw;
   position: relative;
 }
 
 .wifi-wrapper p {
-  width: 200px;
+  font-size: 1.15vw;
+  width: 16vw;
   opacity: 0.4;
 }
 
 @media only screen and (max-width: 992px) {
   .b2 {
-    width: 75%;
+    height: 40%;
+    width: 100%;
+    align-items: center;
   }
 
   .wifi-wrapper {
-    top: 50px;
-    right: 100px;
+    top: 8.5%;
+    right: 8%;
     flex-direction: column;
-    height: 140px;
-    width: 160px;
+    height: 14vw;
+    width: 16vw;
   }
 
   .wifi-img-wrapper {
-    width: 120px;
-    height: 100px;
-    position: relative;
+    width: 11.5vw;
+    height: 10vw;
   }
 
   .wifi-wrapper p {
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 1.15vw;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .b2 {
+    align-items: end;
   }
 }
 
@@ -106,9 +114,9 @@
   }
 
   .wifi-wrapper {
-    top: 20px;
-    right: 60px;
-    height: 110px;
+    top: 5%;
+    right: 8%;
+    height: 20vh;
   }
 
   .wifi-img-wrapper {
@@ -117,6 +125,16 @@
   }
 
   .wifi-wrapper p {
-    font-size: 0.6rem;
+    font-size: 1.4vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .b1 {
+    height: 55%;
+  }
+
+  .b2 {
+    height: 45%;
   }
 }

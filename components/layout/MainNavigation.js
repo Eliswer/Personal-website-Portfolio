@@ -6,9 +6,12 @@ import codeIcon from "../../public/icons/codeIcon.svg";
 
 import ScrollTo from "react-scroll-into-view";
 import useReadingProgress from "../hooks/useReadingProgress";
+import useMediaQuery from "../hooks/useMediaquery";
 
 function mainNavigation() {
   const completion = useReadingProgress();
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
+  const breakPoint = useMediaQuery();
 
   const [visiting, setVisited] = useState({
     aboutMe: true,
@@ -58,48 +61,36 @@ function mainNavigation() {
   };
 
   function calcDate(date1, date2) {
-    /*
-     * calcDate() : Calculates the difference between two dates
-     * @date1 : "First Date in the format MM-DD-YYYY"
-     * @date2 : "Second Date in the format MM-DD-YYYY"
-     * return : Array
-     */
-    //new date instance
     const dt_date1 = new Date(date1);
     const dt_date2 = new Date(date2);
 
-    //Get the Timestamp
     const date1_time_stamp = dt_date1.getTime();
     const date2_time_stamp = dt_date2.getTime();
 
     let calc;
 
-    //Check which timestamp is greater
     if (date1_time_stamp > date2_time_stamp) {
       calc = new Date(date1_time_stamp - date2_time_stamp);
     } else {
       calc = new Date(date2_time_stamp - date1_time_stamp);
     }
-    //Retrieve the date, month and year
+
     const calcFormatTmp =
       calc.getDate() + "-" + (calc.getMonth() + 1) + "-" + calc.getFullYear();
-    //Convert to an array and store
+
     const calcFormat = calcFormatTmp.split("-");
-    //Subtract each member of our array from the default date
+
     const days_passed = Number(Math.abs(calcFormat[0]) - 1);
     const months_passed = Number(Math.abs(calcFormat[1]) - 1);
     const years_passed = Number(Math.abs(calcFormat[2]) - 1970);
 
-    //Set up custom text
     const yrsTxt = ["y", "y"];
     const mnthsTxt = ["m", "m"];
     const daysTxt = ["d", "d"];
 
-    //Convert to days and sum together
     const total_days =
       years_passed * 365 + months_passed * 30.417 + days_passed;
 
-    //display result with custom text
     const result =
       (years_passed == 1
         ? years_passed + " " + yrsTxt[0] + " "
@@ -117,7 +108,6 @@ function mainNavigation() {
         ? days_passed + daysTxt[1]
         : "");
 
-    //return the result
     return {
       total_days: Math.round(total_days),
       result: result.trim(),
@@ -142,12 +132,26 @@ function mainNavigation() {
 
   const developerFor = calcDate("07-01-2022", getTodaysDate());
 
+  useEffect(() => {
+    setHamburgerMenu(breakPoint ? true : false);
+  }, [breakPoint]);
+
   return (
     <>
       <div className={classes["nav-top"]}>
-        <div className={classes.codeIcon}>
-          <Image src={codeIcon} alt="htmlTagIcon" />
-        </div>
+        {hamburgerMenu ? (
+          <>
+            <div className={classes.hamburger}>
+              <div className={classes.line}></div>
+              <div className={classes.line}></div>
+              <div className={classes.line}></div>
+            </div>
+          </>
+        ) : (
+          <div className={classes.codeIcon}>
+            <Image src={codeIcon} alt="htmlTagIcon" />
+          </div>
+        )}
         <ul className={classes.links}>
           <li className={visiting.aboutMe ? `${classes.visiting}` : ""}>
             <ScrollTo selector={".aboutMe"} alignToTop={true}>
@@ -175,10 +179,15 @@ function mainNavigation() {
       <div className={classes["nav-bottom"]}>
         <div className={classes["scroll-bar-fixed"]}></div>
         <h1 className="gradient-text">Developer for: {developerFor.result}</h1>
-        <div
-          className={classes["scroll-bar"]}
-          style={{ width: completion - 15 + "%" }}
-        ></div>
+
+        {hamburgerMenu ? (
+          ""
+        ) : (
+          <div
+            className={classes["scroll-bar"]}
+            style={{ width: completion - 15 + "%" }}
+          ></div>
+        )}
       </div>
     </>
   );
