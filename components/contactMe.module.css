@@ -9,6 +9,14 @@
   position: relative;
 }
 
+.errorMsg {
+  position: absolute;
+  right: 14.5%;
+  color: red;
+  top: 190px;
+  font-size: 2.5vw;
+}
+
 .bottom {
   height: 66%;
   position: relative;
@@ -25,10 +33,10 @@
 
 .contact-form {
   border: 2px solid var(--foam);
-  width: 550px;
+  width: 35.8vw;
   height: 400px;
   position: absolute;
-  right: 176px;
+  right: 11.5%;
   z-index: 20;
   display: flex;
   padding: 30px;
@@ -46,7 +54,7 @@
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  left: 176px;
+  left: 11.5%;
   top: 60px;
   z-index: 20;
 }
@@ -58,7 +66,7 @@
 
 .title {
   font-weight: 300;
-  font-size: 23px;
+  font-size: 1.5rem;
   margin-left: 5px;
 }
 
@@ -67,7 +75,7 @@
 }
 
 .email {
-  font-size: 12px;
+  font-size: 12.4px;
 }
 
 .img-wrapper {
@@ -75,7 +83,7 @@
   z-index: 0;
   top: 60px;
   mix-blend-mode: color-dodge;
-  width: 1519px;
+  width: 100%;
   height: 300px;
 }
 
@@ -115,6 +123,14 @@
   padding: 5px;
   height: 40px;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.contact-form button:disabled,
+.contact-form button[disabled] {
+  color: grey;
+  border-color: grey;
+  cursor: context-menu;
 }
 
 .input-wrapper {
@@ -126,15 +142,29 @@
 
 @media only screen and (max-width: 992px) {
   .contact-info {
-    width: 306px;
-    height: 250px;
-    left: 76px;
+    width: 300px;
+    height: 60%;
+    left: 7%;
+    padding: 10px 20px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .email {
+    font-size: 0.72rem;
   }
 
   .contact-form {
-    width: 420px;
-    height: 340px;
-    right: 76px;
+    width: 42vw;
+    height: 300px;
+    right: 7%;
+    padding: 22px;
   }
 
   .contact-form textarea {
@@ -142,7 +172,19 @@
   }
 
   .img-wrapper {
-    width: 1519px;
-    height: 250px;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-info {
+    width: 250px;
+    height: 60%;
+    left: 7%;
+    padding: 10px 20px;
+  }
+
+  .email {
+    font-size: 0.6rem;
   }
 }

@@ -4,10 +4,18 @@ const useMediaQuery = () => {
   const [breakPoint, setBreakPoint] = useState(false);
 
   useEffect(() => {
-    setBreakPoint(window.innerWidth <= 700);
+    const handleResize = () => {
+      setBreakPoint(window.innerWidth <= 700);
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return breakPoint;
 };
-
 export default useMediaQuery;
