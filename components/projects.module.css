@@ -17,14 +17,15 @@
 }
 
 .carousel-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 360px;
+  height: 350px;
   margin-bottom: 20px;
-  width: 85%;
+  width: 75%;
 }
 
 .bottom:after {
@@ -33,4 +34,25 @@
   bottom: 0;
   border-bottom: 1px solid var(--foam);
   width: 85%;
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-wrapper {
+    height: 270px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-wrapper {
+    height: 290px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-wrapper {
+    height: 400px;
+    margin-bottom: 0;
+  }
 }

@@ -41,6 +41,10 @@
   z-index: 150;
 }
 
+.hamburger:hover {
+  cursor: pointer;
+}
+
 .hamburger div {
   width: 40px;
   height: 2.5px;
@@ -151,10 +155,10 @@
 @media only screen and (max-width: 700px) {
   .nav-top {
     position: fixed;
-    top: 9%;
+    top: 8%;
     align-items: center;
     justify-content: space-between;
-    height: 91%;
+    height: 92%;
     width: 40%;
   }
 

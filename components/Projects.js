@@ -6,6 +6,9 @@ import ProjectCard from "./ProjectCard";
 import calculator from "../public/imgs/projects-imgs/calculator.png";
 import placeholder from "../public/imgs/600x400.svg";
 
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
+
 const projects = [
   {
     title: "Weather app",
@@ -46,13 +49,15 @@ const projects = [
 
 const renderedProjects = projects.map((project) => {
   return (
-    <ProjectCard
-      title={project.title}
-      projectImg={project.img}
-      description={project.description}
-      githubLink={project.githubLink}
-      externalLink={project.externalLink}
-    />
+    <div>
+      <ProjectCard
+        title={project.title}
+        projectImg={project.img}
+        description={project.description}
+        githubLink={project.githubLink}
+        externalLink={project.externalLink}
+      />
+    </div>
   );
 });
 
@@ -66,7 +71,9 @@ function Projects() {
         </div>
         <div className={classes.bottom}>
           <div className={`${classes["carousel-wrapper"]} carrousel-wrapper`}>
-            {renderedProjects}
+            <AwesomeSlider fillParent bullets={false}>
+              {renderedProjects}
+            </AwesomeSlider>
           </div>
         </div>
       </div>
