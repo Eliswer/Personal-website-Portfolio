@@ -41,6 +41,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .wrapper {
+    height: 190px;
+  }
+
   .triangleWrapper {
     width: 60%;
     height: 220px;
@@ -53,6 +57,26 @@
 
   .title-number {
     font-size: 7.5rem;
+  }
+
+  .title-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .triangleWrapper {
+    width: 50%;
+    height: 160px;
+  }
+
+  .title {
+    left: 25%;
+    top: -10px;
+  }
+
+  .title-number {
+    font-size: 6.5rem;
   }
 
   .title-text {

@@ -56,6 +56,7 @@ const renderedProjects = projects.map((project) => {
         description={project.description}
         githubLink={project.githubLink}
         externalLink={project.externalLink}
+        key={project.title}
       />
     </div>
   );

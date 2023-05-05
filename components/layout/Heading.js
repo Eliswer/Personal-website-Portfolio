@@ -5,7 +5,7 @@ import Triangle from "../../public/imgs/PurpleTriangleHeading.png";
 
 function Heading({ number, title }) {
   return (
-    <div style={{ position: "relative" }}>
+    <div className={classes.wrapper} style={{ position: "relative" }}>
       <div className={classes.triangleWrapper}>
         <Image src={Triangle} alt="purple triangle" fill />
       </div>
