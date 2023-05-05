@@ -71,11 +71,11 @@
 
 @media only screen and (max-width: 700px) {
   .wrapper {
-    height: 12vw;
+    height: 11vw;
   }
 
   .img-wrapper {
-    height: 7vw;
+    height: 5vw;
     margin: 3px;
   }
 

@@ -285,5 +285,17 @@
 
   .triangleWrapper {
     width: 60vw;
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .description {
+    padding: 0 50px;
+  }
+
+  .img-wrapper {
+    top: 20%;
+    left: 30%;
   }
 }

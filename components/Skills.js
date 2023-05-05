@@ -67,7 +67,6 @@ const librariesFrameworksUrls = [
 
 const softwareUrls = [
   { alt: "Postman logo", src: postman, level: "blue-2" },
-  { alt: "Trello logo", src: trello, level: "green-1" },
   { alt: "Github Desktop logo", src: github, level: "green-1" },
   { alt: "Adobe After Effects logo", src: aftereffects, level: "green-1" },
   { alt: "Sony Vegas pro", src: vegaspro, level: "green-1" },
@@ -86,17 +85,17 @@ function Skills() {
           <Heading number="02" title="Skills" />
         </div>
         <div className={classes["bottom-wrapper"]}>
-          <div className={`${classes.bottom} ${classes.b1}`}>
+          <div className={classes.bottom}>
             <Technologies
               techGroup={languagesUrls}
               title={"Languages"}
-              width={16}
+              width={20}
               setWifi={setWifi}
             />
             <Technologies
               techGroup={backendTechnologiesUrls}
               title={"Backend Technologies"}
-              width={16}
+              width={20}
               setWifi={setWifi}
             />
             <Technologies
@@ -105,18 +104,16 @@ function Skills() {
               width={20}
               setWifi={setWifi}
             />
-          </div>
-          <div className={`${classes.bottom} ${classes.b2}`}>
             <Technologies
               techGroup={librariesFrameworksUrls}
               title={"Libraries / Frameworks"}
-              width={16}
+              width={20}
               setWifi={setWifi}
             />
             <Technologies
               techGroup={softwareUrls}
               title={"Software"}
-              width={23}
+              width={20}
               setWifi={setWifi}
             />
           </div>
