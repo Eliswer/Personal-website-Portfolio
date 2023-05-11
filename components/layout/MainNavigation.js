@@ -9,54 +9,13 @@ import useReadingProgress from "../hooks/useReadingProgress";
 import useMediaQuery from "../hooks/useMediaquery";
 import useCalcDate from "../hooks/useCalcDate";
 
-function mainNavigation() {
-  const [visiting, setVisited] = useState({
-    aboutMe: true,
-    skills: false,
-    projects: false,
-    contactMe: false,
-  });
-
-  const setAboutMeToVisited = () => {
-    setVisited({
-      ...visiting,
-      aboutMe: true,
-      skills: false,
-      projects: false,
-      contactMe: false,
-    });
-  };
-
-  const setSkillsToVisited = () => {
-    setVisited({
-      ...visiting,
-      aboutMe: false,
-      skills: true,
-      projects: false,
-      contactMe: false,
-    });
-  };
-
-  const setProjectsToVisited = () => {
-    setVisited({
-      ...visiting,
-      aboutMe: false,
-      skills: false,
-      projects: true,
-      contactMe: false,
-    });
-  };
-
-  const setContactMeToVisited = () => {
-    setVisited({
-      ...visiting,
-      aboutMe: false,
-      skills: false,
-      projects: false,
-      contactMe: true,
-    });
-  };
-
+function MainNavigation({
+  setAboutMeToVisited,
+  setContactMeToVisited,
+  setProjectsToVisited,
+  setSkillsToVisited,
+  visiting,
+}) {
   const getTodaysDate = () => {
     var today = new Date();
     var dd = today.getDate();
@@ -168,4 +127,4 @@ function mainNavigation() {
   );
 }
 
-export default mainNavigation;
+export default MainNavigation;

@@ -5,6 +5,7 @@ import classes from "./contactMe.module.css";
 import Heading from "./layout/Heading";
 import Image from "next/image";
 
+import { useInView } from "react-intersection-observer";
 import At from "../public/icons/contact-me/@.svg";
 import Phone from "../public/icons/contact-me/phone.svg";
 import Time from "../public/icons/contact-me/time.svg";
@@ -15,7 +16,13 @@ const initValues = { name: "", email: "", message: "" };
 
 const initState = { isLoading: false, error: "", values: initValues };
 
-function ContactMe() {
+function ContactMe({ setContactMeToVisited }) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
+  if (myElementIsVisible) {
+    setContactMeToVisited();
+  }
+
   const [state, setState] = useState(initState);
   const [touched, setTouched] = useState({});
   let disabled = true;
@@ -66,7 +73,7 @@ function ContactMe() {
 
   return (
     <Wrapper>
-      <div className={classes.wrapper}>
+      <div className={classes.wrapper} ref={myRef}>
         <div className="contactMe"></div>
         <div className={classes.top}>
           <Heading number="04" title="Contact me" />

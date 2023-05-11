@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import Wrapper from "./layout/Wrapper";
 import classes from "./skills.module.css";
 import Heading from "./layout/Heading";
@@ -30,7 +31,6 @@ import react from "../public/icons/icons-libraries-frameworks/react.svg";
 import nextjs from "../public/icons/icons-libraries-frameworks/nextjs.svg";
 
 import postman from "../public/icons/icons-software/postman.svg";
-import trello from "../public/icons/icons-software/trello.svg";
 import github from "../public/icons/icons-software/github.svg";
 import aftereffects from "../public/icons/icons-software/aftereffects.svg";
 import vegaspro from "../public/icons/icons-software/vegaspro.svg";
@@ -73,7 +73,13 @@ const softwareUrls = [
   { alt: "Figma logo", src: figma, level: "yellow-3" },
 ];
 
-function Skills() {
+function Skills({ setSkillsToVisited }) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
+  if (myElementIsVisible) {
+    setSkillsToVisited();
+  }
+
   const grey = "grey-0";
   const [wifi, setWifi] = useState(grey);
 
@@ -85,7 +91,7 @@ function Skills() {
           <Heading number="02" title="Skills" />
         </div>
         <div className={classes["bottom-wrapper"]}>
-          <div className={classes.bottom}>
+          <div className={classes.bottom} ref={myRef}>
             <Technologies
               techGroup={languagesUrls}
               title={"Languages"}

@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import Wrapper from "./layout/Wrapper";
 import classes from "./projects.module.css";
 import Heading from "./layout/Heading";
@@ -62,7 +63,13 @@ const renderedProjects = projects.map((project) => {
   );
 });
 
-function Projects() {
+function Projects({ setProjectsToVisited }) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
+  if (myElementIsVisible) {
+    setProjectsToVisited();
+  }
+
   return (
     <Wrapper>
       <div className={classes.wrapper}>
@@ -70,7 +77,7 @@ function Projects() {
         <div className={classes.top}>
           <Heading number="03" title="Projects" />
         </div>
-        <div className={classes.bottom}>
+        <div className={classes.bottom} ref={myRef}>
           <p className={classes.swipe}>Swipe !</p>
           <div className={`${classes["carousel-wrapper"]} carrousel-wrapper`}>
             <AwesomeSlider fillParent bullets={false}>

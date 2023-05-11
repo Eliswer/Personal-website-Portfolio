@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Wrapper from "./layout/Wrapper";
 import classes from "./aboutMe.module.css";
 import Image from "next/image";
@@ -6,17 +6,12 @@ import Image from "next/image";
 import Me from "../public/imgs/mypicture.svg";
 import Triangle from "../public/imgs/PurpleTriangleWider.png";
 
-function AboutMe() {
-  const [myElementIsVisible, updateMyElementIsVisible] = useState();
-  const myRef = useRef();
+function AboutMe({ setAboutMeToVisited }) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries, observer) => {
-      const entry = entries[0];
-      updateMyElementIsVisible(entry.isIntersecting);
-    });
-    observer.observe(myRef.current);
-  }, []);
+  if (myElementIsVisible) {
+    setAboutMeToVisited();
+  }
 
   return (
     <>
