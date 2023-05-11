@@ -1,3 +1,5 @@
+/* Check for scrolling - completion scroll bar */
+
 import { useEffect, useState } from "react";
 
 const useReadingProgress = () => {

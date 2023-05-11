@@ -16,6 +16,7 @@ function MainNavigation({
   setSkillsToVisited,
   visiting,
 }) {
+  /* Gets todays date */
   const getTodaysDate = () => {
     var today = new Date();
     var dd = today.getDate();
@@ -33,9 +34,13 @@ function MainNavigation({
     return (today = mm + "-" + dd + "-" + yyyy);
   };
 
+  /* Calls a custom hook to get a time difference between 2 dates */
   const developerFor = useCalcDate("07-01-2022", getTodaysDate());
 
+  /* Calls a custom hook for a scroll completion bar */
   const completion = useReadingProgress();
+
+  /* Changing navigation to hamburger menu */
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const breakPoint = useMediaQuery();

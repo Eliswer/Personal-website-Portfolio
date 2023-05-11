@@ -1,3 +1,5 @@
+/* Calculates the time between two given dates */
+
 function useCalcDate(date1, date2) {
   const dt_date1 = new Date(date1);
   const dt_date2 = new Date(date2);

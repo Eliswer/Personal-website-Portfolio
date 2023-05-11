@@ -10,9 +10,11 @@ function Skills({ techGroup, title, width, setWifi }) {
       <div
         className={classes["img-wrapper"]}
         key={icon.alt}
+        /* Sets wifi im to a proper colour on hover over icons */
         onMouseEnter={() => {
           setWifi(icon.level);
         }}
+        /* Sets wifi img to grey when mouse leaves an icon */
         onMouseLeave={() => {
           setWifi(grey);
         }}

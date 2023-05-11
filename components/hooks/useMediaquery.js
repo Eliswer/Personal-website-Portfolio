@@ -1,3 +1,5 @@
+/* Check for browser width being 700 */
+
 import { useState, useEffect } from "react";
 
 const useMediaQuery = () => {

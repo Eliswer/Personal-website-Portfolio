@@ -74,12 +74,14 @@ const softwareUrls = [
 ];
 
 function Skills({ setSkillsToVisited }) {
+  /* Sets 02.About me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
   if (myElementIsVisible) {
     setSkillsToVisited();
   }
 
+  /* init state for wifi img */
   const grey = "grey-0";
   const [wifi, setWifi] = useState(grey);
 

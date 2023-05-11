@@ -17,12 +17,14 @@ const initValues = { name: "", email: "", message: "" };
 const initState = { isLoading: false, error: "", values: initValues };
 
 function ContactMe({ setContactMeToVisited }) {
+  /* Sets 04.Contact me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
   if (myElementIsVisible) {
     setContactMeToVisited();
   }
 
+  /* States and functions to send myself an email if someone fills up my contact form */
   const [state, setState] = useState(initState);
   const [touched, setTouched] = useState({});
   let disabled = true;

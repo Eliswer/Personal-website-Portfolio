@@ -7,6 +7,7 @@ import Me from "../public/imgs/mypicture.svg";
 import Triangle from "../public/imgs/PurpleTriangleWider.png";
 
 function AboutMe({ setAboutMeToVisited }) {
+  /* Sets 01.About me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
   if (myElementIsVisible) {

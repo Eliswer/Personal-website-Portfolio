@@ -10,6 +10,7 @@ import placeholder from "../public/imgs/600x400.svg";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 
+/* Objects to create projectCards */
 const projects = [
   {
     title: "Weather app",
@@ -64,6 +65,7 @@ const renderedProjects = projects.map((project) => {
 });
 
 function Projects({ setProjectsToVisited }) {
+  /* Sets 03.About me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
   if (myElementIsVisible) {
