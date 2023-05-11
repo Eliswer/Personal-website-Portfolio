@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import Wrapper from "./layout/Wrapper";
 import classes from "./aboutMe.module.css";
 import Image from "next/image";
@@ -6,6 +7,17 @@ import Me from "../public/imgs/mypicture.svg";
 import Triangle from "../public/imgs/PurpleTriangleWider.png";
 
 function AboutMe() {
+  const [myElementIsVisible, updateMyElementIsVisible] = useState();
+  const myRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      const entry = entries[0];
+      updateMyElementIsVisible(entry.isIntersecting);
+    });
+    observer.observe(myRef.current);
+  }, []);
+
   return (
     <>
       <Wrapper margin="3.4rem">
@@ -20,7 +32,7 @@ function AboutMe() {
                 <Image src={Me} alt="my-picture" fill />
               </div>
             </div>
-            <div className={classes.info}>
+            <div ref={myRef} className={classes.info}>
               <p className={`${classes.t1} gradient-text`}>Hi, my name is</p>
               <h1 className={`${classes.t2} gradient-text`}>
                 Eliška Šindelářová

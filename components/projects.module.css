@@ -16,6 +16,13 @@
   height: 66.5%;
 }
 
+.swipe {
+  position: absolute;
+  top: 170px;
+  color: var(--foam);
+  visibility: hidden;
+}
+
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -54,5 +61,15 @@
   .carousel-wrapper {
     height: 400px;
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel-wrapper {
+    width: 100%;
+  }
+
+  .swipe {
+    visibility: visible;
   }
 }

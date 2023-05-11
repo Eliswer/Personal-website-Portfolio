@@ -71,6 +71,7 @@ function Projects() {
           <Heading number="03" title="Projects" />
         </div>
         <div className={classes.bottom}>
+          <p className={classes.swipe}>Swipe !</p>
           <div className={`${classes["carousel-wrapper"]} carrousel-wrapper`}>
             <AwesomeSlider fillParent bullets={false}>
               {renderedProjects}
