@@ -1,26 +1,53 @@
 .triangleWrapper {
   position: relative;
   mix-blend-mode: color-dodge;
-  width: 49.5%;
-  height: 250px;
+  width: 70%;
+  height: 130px;
 }
 
 .title {
   position: absolute;
-  top: 0px;
-  left: 35%;
   font-weight: 700;
+  left: 25%;
+  top: -20px;
 }
 
 .title-number {
-  font-size: 9rem;
+  font-size: 5.8rem;
 }
 
 .title-text {
-  font-size: 3.5rem;
+  font-size: 1.4rem;
 }
 
-@media only screen and (min-width: 1081px) {
+@media only screen and (min-width: 425px) {
+  .title {
+    left: 35%;
+    top: -20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .triangleWrapper {
+    width: 60%;
+    height: 25vw;
+  }
+
+  .title {
+    left: 35%;
+    top: -10px;
+  }
+
+  .title-number {
+    font-size: 15vw;
+  }
+
+  .title-text {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .triangleWrapper {
     width: 55%;
     height: 18vw;
@@ -28,97 +55,14 @@
 
   .title {
     left: 35%;
+    top: -12px;
   }
 
   .title-number {
-    font-size: 10vw;
+    font-size: 11vw;
   }
 
   .title-text {
-    font-size: 4.2vw;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .triangleWrapper {
-    width: 60%;
-    height: 240px;
-  }
-
-  .title-number {
-    font-size: 8rem;
-  }
-
-  .title-text {
-    font-size: 2.5rem;
-  }
-
-  .title {
-    left: 41%;
-    top: 8px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    height: 190px;
-  }
-
-  .triangleWrapper {
-    width: 60%;
-    height: 220px;
-  }
-
-  .title {
-    left: 37%;
-    top: 0px;
-  }
-
-  .title-number {
-    font-size: 7.5rem;
-  }
-
-  .title-text {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .triangleWrapper {
-    width: 50%;
-    height: 160px;
-  }
-
-  .title {
-    left: 25%;
-    top: -10px;
-  }
-
-  .title-number {
-    font-size: 6.5rem;
-  }
-
-  .title-text {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 428px) {
-  .triangleWrapper {
-    width: 50%;
-    height: 140px;
-  }
-
-  .title {
-    left: 18%;
-    top: -10px;
-  }
-
-  .title-number {
-    font-size: 5.8rem;
-  }
-
-  .title-text {
-    font-size: 1.4rem;
+    font-size: 4vw;
   }
 }

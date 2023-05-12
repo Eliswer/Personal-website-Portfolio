@@ -16,43 +16,43 @@ export default function Home() {
   });
 
   const setAboutMeToVisited = () => {
-    setVisited({
+    /* setVisited({
       ...visiting,
       aboutMe: true,
       skills: false,
       projects: false,
       contactMe: false,
-    });
+    });*/
   };
 
   const setSkillsToVisited = () => {
-    setVisited({
+    /*setVisited({
       ...visiting,
       aboutMe: false,
       skills: true,
       projects: false,
       contactMe: false,
-    });
+    });*/
   };
 
   const setProjectsToVisited = () => {
-    setVisited({
+    /*setVisited({
       ...visiting,
       aboutMe: false,
       skills: false,
       projects: true,
       contactMe: false,
-    });
+    });*/
   };
 
   const setContactMeToVisited = () => {
-    setVisited({
+    /*setVisited({
       ...visiting,
       aboutMe: false,
       skills: false,
       projects: false,
       contactMe: true,
-    });
+    });*/
   };
 
   return (

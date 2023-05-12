@@ -7,15 +7,6 @@
   z-index: 100;
 }
 
-.nav-bottom-backdrop {
-  position: fixed;
-  right: 0;
-  width: 60%;
-  height: 100%;
-  background-color: var(--bg-black);
-  opacity: 0.3;
-}
-
 .nav-top {
   position: fixed;
   top: 0;
@@ -80,8 +71,11 @@
 }
 
 .codeIcon {
+  height: 40px;
+  width: 40px;
   margin: 16px 0 10px 20px;
   padding-right: 10px;
+  position: relative;
 }
 
 .resume-button {
@@ -96,7 +90,7 @@
 .nav-bottom {
   position: fixed;
   top: 37px;
-  height: 2rem;
+  height: 32px;
   width: 100%;
   display: flex;
   background: var(--neon-green);
@@ -177,5 +171,47 @@
     position: fixed;
     bottom: 20px;
     width: 20px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .nav-top {
+    height: 80px;
+  }
+
+  .nav-bottom {
+    height: 50px;
+    top: 80px;
+  }
+
+  .links {
+    width: 60%;
+  }
+
+  .links li {
+    padding: 8px 15px;
+    font-size: 25px;
+  }
+
+  .codeIcon {
+    height: 65px;
+    width: 70px;
+  }
+
+  .resume-button {
+    font-size: 25px;
+  }
+
+  .nav-bottom h1 {
+    font-size: 20px;
+  }
+
+  .scroll-bar-fixed {
+    margin-top: 12px;
+  }
+
+  .scroll-bar {
+    left: 312px;
+    margin-top: 12px;
   }
 }

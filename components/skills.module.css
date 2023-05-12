@@ -12,6 +12,8 @@
 }
 
 .bottom-wrapper {
+  display: flex;
+  align-items: end;
   position: relative;
   align-items: center;
   height: 100%;
@@ -49,119 +51,41 @@
 
 .wifi-wrapper {
   position: absolute;
-  top: 10%;
-  right: 5%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 16vh;
-  width: 27.5vw;
+  top: 16%;
+  right: 8%;
+  height: 11vh;
+  width: 220px;
+  flex-direction: row-reverse;
   color: var(--foam);
+  align-items: center;
 }
 
 .wifi-img-wrapper {
-  width: 11vw;
-  height: 9vw;
+  width: 13vw;
+  height: 12vw;
   position: relative;
 }
 
 .wifi-wrapper p {
-  font-size: 1.15vw;
-  width: 16vw;
+  font-size: 8px;
+  width: 60%;
   opacity: 0.4;
 }
 
-@media only screen and (min-width: 1081px) {
-  .bottom-wrapper {
-    display: flex;
-  }
-
-  .bottom {
-    height: 80%;
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .bottom {
-    padding-right: 0;
-  }
-
-  .wifi-wrapper {
-    top: 8.5%;
-    right: 8%;
-    flex-direction: column;
-    height: 14vw;
-    width: 16vw;
-  }
-
-  .wifi-img-wrapper {
-    width: 11.5vw;
-    height: 10vw;
-  }
-
-  .wifi-wrapper p {
-    width: 100%;
-    font-size: 1.15vw;
-  }
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .wifi-wrapper {
     top: 5%;
-    right: 8%;
-    height: 20vh;
-  }
-
-  .wifi-img-wrapper {
-    width: 110px;
-    height: 90px;
-  }
-
-  .wifi-wrapper p {
-    font-size: 1.4vw;
-  }
-
-  .bottom {
-    padding-left: 5vw;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    height: 100%;
-    align-items: end;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .bottom {
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .bottom {
-    padding-bottom: 20px;
-    padding-top: 0px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .wifi-wrapper {
-    top: 13%;
-    right: 8%;
-    height: 20vh;
-    width: 200px;
-    flex-direction: row-reverse;
-  }
-
-  .wifi-img-wrapper {
-    width: 80px;
-    height: 70px;
+    right: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15vw;
+    width: 220px;
   }
 
   .wifi-wrapper p {
-    font-size: 7px;
-    width: 60%;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
   }
 }

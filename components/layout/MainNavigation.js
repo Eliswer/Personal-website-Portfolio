@@ -78,7 +78,7 @@ function MainNavigation({
           ""
         ) : (
           <div className={classes.codeIcon}>
-            <Image src={codeIcon} alt="htmlTagIcon" />
+            <Image src={codeIcon} fill alt="htmlTagIcon" />
           </div>
         )}
 
