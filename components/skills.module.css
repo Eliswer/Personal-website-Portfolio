@@ -72,6 +72,17 @@
   opacity: 0.4;
 }
 
+@media only screen and (min-width: 1081px) {
+  .bottom-wrapper {
+    display: flex;
+  }
+
+  .bottom {
+    height: 80%;
+    margin-bottom: 50px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .bottom {
     padding-right: 0;

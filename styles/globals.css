@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .gradient-text {
   background: -webkit-linear-gradient(279deg, #dff4fd 34%, #02ff00 83%) -47% 64%;
   background-clip: text;

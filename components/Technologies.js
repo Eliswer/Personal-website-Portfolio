@@ -26,7 +26,7 @@ function Skills({ techGroup, title, width, setWifi }) {
 
   return (
     <>
-      <div className={classes.wrapper} style={{ width: width + "rem" }}>
+      <div className={classes.wrapper}>
         <p className={classes.title}>{title}</p>
         <div className={classes["icons-wrapper"]}>{renderedIcons}</div>
       </div>

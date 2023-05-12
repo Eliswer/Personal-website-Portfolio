@@ -97,31 +97,26 @@ function Skills({ setSkillsToVisited }) {
             <Technologies
               techGroup={languagesUrls}
               title={"Languages"}
-              width={20}
               setWifi={setWifi}
             />
             <Technologies
               techGroup={backendTechnologiesUrls}
               title={"Backend Technologies"}
-              width={20}
               setWifi={setWifi}
             />
             <Technologies
               techGroup={otherUrls}
               title={"Other"}
-              width={20}
               setWifi={setWifi}
             />
             <Technologies
               techGroup={librariesFrameworksUrls}
               title={"Libraries / Frameworks"}
-              width={20}
               setWifi={setWifi}
             />
             <Technologies
               techGroup={softwareUrls}
               title={"Software"}
-              width={20}
               setWifi={setWifi}
             />
           </div>
