@@ -1,7 +1,7 @@
 .wrapper {
   border: 2px solid var(--foam);
-  height: 340px;
-  width: 40vw;
+  height: 50vh;
+  width: 70vw;
   background: rgb(48, 16, 42);
   background: linear-gradient(
     0deg,
@@ -42,51 +42,18 @@
 .icons-wrapper {
   display: flex;
   justify-content: space-around;
-  padding: 0 100px;
+  padding: 0 50px;
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-  .wrapper {
-    height: 270px;
-  }
-
-  .projectImgWrapper {
-    width: 80%;
-    height: 110px;
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    height: 290px;
-  }
-
-  .projectImgWrapper {
-    width: 80%;
-    height: 130px;
-    display: flex;
-  }
-
+@media only screen and (min-width: 768px) {
   .icons-wrapper {
-    padding: 0 30px;
+    padding: 0 150px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 1024px) {
   .wrapper {
-    height: 400px;
-  }
-
-  .projectImgWrapper {
-    height: 200px;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .wrapper {
-    width: 60vw;
+    width: 45vw;
   }
 }
