@@ -53,6 +53,17 @@ function MainNavigation({
     showMenu ? setShowMenu(false) : setShowMenu(true);
   };
 
+  let animation = {
+    left: showMenu ? "0" : "-50%",
+    transition: "350ms",
+  };
+
+  if (hamburgerMenu) {
+    animation = { left: showMenu ? "0" : "-50%", transition: "350ms" };
+  } else {
+    animation = { ...animation, left: "0" };
+  }
+
   return (
     <>
       <>
@@ -72,7 +83,9 @@ function MainNavigation({
       </>
       <div
         className={classes["nav-top"]}
-        style={{ visibility: showMenu ? "hidden" : "visible" }}
+        style={{
+          ...animation,
+        }}
       >
         {hamburgerMenu ? (
           ""
@@ -110,11 +123,14 @@ function MainNavigation({
       <div className={classes["nav-bottom"]}>
         <div
           className={classes["scroll-bar-fixed"]}
-          style={{ visibility: showMenu ? "hidden" : "visible" }}
+          style={{ ...animation }}
         ></div>
         <h1
           className="gradient-text"
-          style={{ visibility: showMenu ? "hidden" : "visible" }}
+          style={{
+            left: showMenu ? "25px" : "-50%",
+            transition: "350ms",
+          }}
         >
           Developer for: {developerFor.result}
         </h1>

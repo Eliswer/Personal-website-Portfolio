@@ -162,8 +162,9 @@
   }
 
   .nav-bottom h1 {
+    font-size: 0.55rem;
     position: fixed;
-    bottom: 12px;
+    bottom: 15px;
     left: 25px;
   }
 
