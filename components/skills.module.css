@@ -13,7 +13,7 @@
 
 .bottom-wrapper {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   position: relative;
   align-items: center;
   height: 100%;

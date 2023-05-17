@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Wrapper from "./layout/Wrapper";
 import classes from "./contactMe.module.css";
@@ -20,9 +20,11 @@ function ContactMe({ setContactMeToVisited }) {
   /* Sets 04.Contact me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-  if (myElementIsVisible) {
-    setContactMeToVisited();
-  }
+  useEffect(() => {
+    if (myElementIsVisible) {
+      setContactMeToVisited();
+    }
+  }, [myElementIsVisible]);
 
   /* States and functions to send myself an email if someone fills up my contact form */
   const [state, setState] = useState(initState);
@@ -117,7 +119,7 @@ function ContactMe({ setContactMeToVisited }) {
               className={classes["shared-styling"]}
               defaultValue={values.message}
               onChange={handleChange}
-              onVBlur={onBlur}
+              onBlur={onBlur}
               name="message"
             ></textarea>
             <button disabled={disabled} onClick={onSubmit}>

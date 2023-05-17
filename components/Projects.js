@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import Wrapper from "./layout/Wrapper";
 import classes from "./projects.module.css";
 import Heading from "./layout/Heading";
@@ -68,9 +69,11 @@ function Projects({ setProjectsToVisited }) {
   /* Sets 03.About me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-  if (myElementIsVisible) {
-    setProjectsToVisited();
-  }
+  useEffect(() => {
+    if (myElementIsVisible) {
+      setProjectsToVisited();
+    }
+  }, [myElementIsVisible]);
 
   return (
     <Wrapper>

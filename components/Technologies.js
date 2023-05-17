@@ -2,7 +2,7 @@ import classes from "./technologies.module.css";
 
 import Image from "next/image";
 
-function Skills({ techGroup, title, width, setWifi }) {
+function Skills({ techGroup, title, setWifi }) {
   const grey = "grey-0";
 
   const renderedIcons = techGroup.map((icon) => {

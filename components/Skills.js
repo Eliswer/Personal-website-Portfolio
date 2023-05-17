@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Wrapper from "./layout/Wrapper";
 import classes from "./skills.module.css";
@@ -77,9 +77,11 @@ function Skills({ setSkillsToVisited }) {
   /* Sets 02.About me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-  if (myElementIsVisible) {
-    setSkillsToVisited();
-  }
+  useEffect(() => {
+    if (myElementIsVisible) {
+      setSkillsToVisited();
+    }
+  }, [myElementIsVisible]);
 
   /* init state for wifi img */
   const grey = "grey-0";

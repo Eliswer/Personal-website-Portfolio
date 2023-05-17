@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import Wrapper from "./layout/Wrapper";
 import classes from "./aboutMe.module.css";
 import Image from "next/image";
@@ -10,9 +11,11 @@ function AboutMe({ setAboutMeToVisited }) {
   /* Sets 01.About me to green if component is visible */
   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-  if (myElementIsVisible) {
-    setAboutMeToVisited();
-  }
+  useEffect(() => {
+    if (myElementIsVisible) {
+      setAboutMeToVisited();
+    }
+  }, [myElementIsVisible]);
 
   return (
     <>
