@@ -109,7 +109,7 @@ function ContactMe({ setContactMeToVisited }) {
                 className={classes["shared-styling"]}
                 defaultValue={values.email}
                 onChange={handleChange}
-                onVBlur={onBlur}
+                onBlur={onBlur}
               ></input>
             </div>
             <textarea
@@ -127,14 +127,14 @@ function ContactMe({ setContactMeToVisited }) {
           <div className={`${classes["contact-info"]} ${classes.bg}`}>
             <div className={classes.line}>
               <div className={classes["title-wrapper"]}>
-                <Image src={Phone} />
+                <Image src={Phone} alt="phone icon" />
                 <p className={`${classes.title} gradient-text`}>Linkedin</p>
               </div>
               <p className={classes.description}>tbd</p>
             </div>
             <div className={classes.line}>
               <div className={classes["title-wrapper"]}>
-                <Image src={At} />
+                <Image src={At} alt="@ icon" />
                 <p className={`${classes.title} gradient-text`}>Email me</p>
               </div>
               <p className={`${classes.description} ${classes.email}`}>
@@ -143,7 +143,7 @@ function ContactMe({ setContactMeToVisited }) {
             </div>
             <div className={classes.line}>
               <div className={classes["title-wrapper"]}>
-                <Image src={Time} />
+                <Image src={Time} alt="clock icon" />
                 <p className={`${classes.title} gradient-text`}>Availability</p>
               </div>
               <p className={classes.description}>7am - 10pm</p>
