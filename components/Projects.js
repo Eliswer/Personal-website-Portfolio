@@ -6,6 +6,7 @@ import Heading from "./layout/Heading";
 
 import ProjectCard from "./ProjectCard";
 import calculator from "../public/imgs/projects-imgs/calculator.png";
+import btnGenerator from "../public/imgs/projects-imgs/btn.png";
 import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
@@ -14,11 +15,11 @@ import "react-awesome-slider/dist/styles.css";
 /* Objects to create projectCards */
 const projects = [
   {
-    title: "Weather app",
-    img: placeholder,
-    description: "",
-    githubLink: "https://github.com/Eliswer/Weather-app",
-    externalLink: "",
+    title: "Button generator",
+    img: btnGenerator,
+    description: "Make an advanced button and copy it into your project",
+    githubLink: "https://github.com/Eliswer/Button-generator",
+    externalLink: "https://button-generator-nine.vercel.app/",
   },
   {
     title: "Calculator",
@@ -28,10 +29,10 @@ const projects = [
     externalLink: "https://react-calculator-dcknhdcbj-eliswer.vercel.app/",
   },
   {
-    title: "To be added",
+    title: "Weather app",
     img: placeholder,
     description: "",
-    githubLink: "",
+    githubLink: "https://github.com/Eliswer/Weather-app",
     externalLink: "",
   },
   {
