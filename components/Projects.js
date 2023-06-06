@@ -20,6 +20,7 @@ const projects = [
     description: "Make an advanced button and copy it into your project",
     githubLink: "https://github.com/Eliswer/Button-generator",
     externalLink: "https://button-generator-nine.vercel.app/",
+    key: "1",
   },
   {
     title: "Calculator",
@@ -27,6 +28,7 @@ const projects = [
     description: "Advanced calculator made with React",
     githubLink: "https://github.com/Eliswer/Calculator-project",
     externalLink: "https://react-calculator-dcknhdcbj-eliswer.vercel.app/",
+    key: "2",
   },
   {
     title: "Weather app",
@@ -34,6 +36,7 @@ const projects = [
     description: "",
     githubLink: "https://github.com/Eliswer/Weather-app",
     externalLink: "",
+    key: "3",
   },
   {
     title: "To be added",
@@ -41,6 +44,7 @@ const projects = [
     description: "",
     githubLink: "",
     externalLink: "",
+    key: "4",
   },
   {
     title: "To be added",
@@ -48,6 +52,7 @@ const projects = [
     description: "",
     githubLink: "",
     externalLink: "",
+    key: "5",
   },
 ];
 
@@ -60,7 +65,7 @@ const renderedProjects = projects.map((project) => {
         description={project.description}
         githubLink={project.githubLink}
         externalLink={project.externalLink}
-        key={project.title}
+        key={project.key}
       />
     </div>
   );

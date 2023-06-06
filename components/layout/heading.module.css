@@ -10,6 +10,7 @@
   font-weight: 700;
   left: 25%;
   top: -20px;
+  animation: typing 3.5s steps(10, end), blink-caret 0.5s step-end infinite;
 }
 
 .title-number {
@@ -18,6 +19,25 @@
 
 .title-text {
   font-size: 1.4rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 @media only screen and (min-width: 425px) {
