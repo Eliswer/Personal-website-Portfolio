@@ -81,6 +81,33 @@
 .t2 {
   top: 18%;
   font-size: 7.8vw;
+  color: #fff;
+  overflow: hidden;
+  border-right: 0.15em solid var(--neon-green);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(15, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--neon-green);
+  }
 }
 
 .t3 {
