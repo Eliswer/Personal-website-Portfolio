@@ -50,3 +50,7 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+.awssld__content {
+  background-color: transparent !important;
+}

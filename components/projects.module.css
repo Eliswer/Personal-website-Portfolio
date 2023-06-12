@@ -42,6 +42,10 @@
   width: 85%;
 }
 
+.awssld__content {
+  background-color: transparent;
+}
+
 @media only screen and (min-width: 525px) {
   .swipe {
     visibility: hidden;

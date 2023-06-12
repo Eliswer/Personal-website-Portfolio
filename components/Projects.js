@@ -1,7 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import Wrapper from "./layout/Wrapper";
-import classes from "./projects.module.css";
 import Heading from "./layout/Heading";
 
 import ProjectCard from "./ProjectCard";
@@ -11,6 +10,7 @@ import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
+import classes from "./projects.module.css";
 
 /* Objects to create projectCards */
 const projects = [
