@@ -8,6 +8,7 @@ import calculator from "../public/imgs/projects-imgs/calculator.png";
 import btnGenerator from "../public/imgs/projects-imgs/btn.png";
 import jokes from "../public/imgs/projects-imgs/jokes.png";
 import nfs from "../public/imgs/projects-imgs/nfs.png";
+import tiktaktoe from "../public/imgs/projects-imgs/tiktaktoe.png";
 import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
@@ -64,6 +65,14 @@ const projects = [
     githubLink: "https://github.com/Eliswer/need-for-speed-box-hover-effect",
     externalLink:
       "https://need-for-speed-box-hover-effect-82yaqfhc0-eliswer.vercel.app/",
+    key: "6",
+  },
+  {
+    title: "Tik tak toe",
+    img: tiktaktoe,
+    description: "Choose a player image and play against your friend",
+    githubLink: "https://github.com/Eliswer/Tik-tak-toe",
+    externalLink: "https://tik-tak-toe-six-alpha.vercel.app/",
     key: "6",
   },
 ];
