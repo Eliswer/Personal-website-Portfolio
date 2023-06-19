@@ -6,6 +6,7 @@ import Heading from "./layout/Heading";
 import ProjectCard from "./ProjectCard";
 import calculator from "../public/imgs/projects-imgs/calculator.png";
 import btnGenerator from "../public/imgs/projects-imgs/btn.png";
+import jokes from "../public/imgs/projects-imgs/jokes.png";
 import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
@@ -33,16 +34,16 @@ const projects = [
   {
     title: "Weather app",
     img: placeholder,
-    description: "",
+    description: "Search for your city and display the weather data",
     githubLink: "https://github.com/Eliswer/Weather-app",
     externalLink: "",
     key: "3",
   },
   {
-    title: "To be added",
-    img: placeholder,
-    description: "",
-    githubLink: "",
+    title: "Dad jokes",
+    img: jokes,
+    description: "Get a new joke after every button click",
+    githubLink: "https://github.com/Eliswer/random-dad-jokes",
     externalLink: "",
     key: "4",
   },
