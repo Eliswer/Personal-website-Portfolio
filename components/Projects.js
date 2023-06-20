@@ -79,14 +79,13 @@ const projects = [
 
 const renderedProjects = projects.map((project) => {
   return (
-    <div>
+    <div key={project.key}>
       <ProjectCard
         title={project.title}
         projectImg={project.img}
         description={project.description}
         githubLink={project.githubLink}
         externalLink={project.externalLink}
-        key={project.key}
       />
     </div>
   );

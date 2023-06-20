@@ -26,10 +26,20 @@ function ProjectCard({
         <p className={classes.description}>{description}</p>
         <div className={classes["icons-wrapper"]}>
           <a href={githubLink}>
-            <Image src={githubLinkIcon} alt="github icon" width={25} />
+            <Image
+              src={githubLinkIcon}
+              alt="github icon"
+              width={25}
+              height={"auto"}
+            />
           </a>
           <a href={externalLink}>
-            <Image src={extLinkIcon} alt="external link icon" width={25} />
+            <Image
+              src={extLinkIcon}
+              alt="external link icon"
+              width={25}
+              height={"auto"}
+            />
           </a>
         </div>
       </div>
