@@ -35,6 +35,9 @@
   left: 30%;
   width: 120px;
   height: 120px;
+}
+
+.img-wrapper img {
   animation: fadeIn 3s;
 }
 
@@ -96,8 +99,6 @@
   top: 18%;
   font-size: 7.8vw;
   color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
   margin: 0 auto;
 }
 
