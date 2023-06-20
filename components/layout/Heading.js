@@ -11,9 +11,7 @@ function Heading({ number, title }) {
       </div>
       <h2 className={`${classes.title} gradient-text`}>
         <span className={classes["title-number"]}>{number}</span>
-        <span ref={myRef} className={classes["title-text"]}>
-          {title}
-        </span>
+        <span className={classes["title-text"]}>{title}</span>
       </h2>
     </div>
   );
