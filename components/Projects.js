@@ -9,6 +9,7 @@ import btnGenerator from "../public/imgs/projects-imgs/btn.png";
 import jokes from "../public/imgs/projects-imgs/jokes.png";
 import nfs from "../public/imgs/projects-imgs/nfs.png";
 import tiktaktoe from "../public/imgs/projects-imgs/tiktaktoe.png";
+import shoppinglist from "../public/imgs/projects-imgs/shoppinglist.png";
 import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
@@ -26,12 +27,20 @@ const projects = [
     key: "1",
   },
   {
+    title: "Shopping list",
+    img: shoppinglist,
+    description: "Keep track of items you buy with this list",
+    githubLink: "https://github.com/Eliswer/Shopping-list",
+    externalLink: "https://shopping-list-ruby.vercel.app/",
+    key: "2",
+  },
+  {
     title: "Calculator",
     img: calculator,
     description: "Advanced calculator made with React",
     githubLink: "https://github.com/Eliswer/Calculator-project",
     externalLink: "https://react-calculator-dcknhdcbj-eliswer.vercel.app/",
-    key: "2",
+    key: "3",
   },
   {
     title: "Weather app",
@@ -39,7 +48,7 @@ const projects = [
     description: "Search for your city and display the weather data",
     githubLink: "https://github.com/Eliswer/Weather-app",
     externalLink: "",
-    key: "3",
+    key: "4",
   },
   {
     title: "Dad jokes",
@@ -47,14 +56,6 @@ const projects = [
     description: "Get a new joke after every button click",
     githubLink: "https://github.com/Eliswer/random-dad-jokes",
     externalLink: "https://random-dad-jokes-psi.vercel.app/",
-    key: "4",
-  },
-  {
-    title: "Shopping list",
-    img: placeholder,
-    description: "Keep track of items you buy with this list",
-    githubLink: "https://github.com/Eliswer/Shopping-list",
-    externalLink: "",
     key: "5",
   },
   {
@@ -73,7 +74,7 @@ const projects = [
     description: "Choose a player image and play against your friend",
     githubLink: "https://github.com/Eliswer/Tik-tak-toe",
     externalLink: "https://tik-tak-toe-six-alpha.vercel.app/",
-    key: "6",
+    key: "7",
   },
 ];
 
