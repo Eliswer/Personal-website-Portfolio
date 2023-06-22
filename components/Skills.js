@@ -95,7 +95,7 @@ function Skills({ setSkillsToVisited }) {
           <Heading number="02" title="Skills" />
         </div>
         <div className={classes["bottom-wrapper"]}>
-          <div className={classes.bottom} ref={myRef}>
+          <div className={classes.bottom}>
             <Technologies
               techGroup={languagesUrls}
               title={"Languages"}
@@ -123,7 +123,7 @@ function Skills({ setSkillsToVisited }) {
             />
           </div>
         </div>
-        <div className={classes["wifi-wrapper"]}>
+        <div className={classes["wifi-wrapper"]} ref={myRef}>
           <div className={classes["wifi-img-wrapper"]}>
             <Image
               src={`/../public/imgs/wifi-strength/${wifi}.png`}

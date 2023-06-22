@@ -77,13 +77,13 @@ function ContactMe({ setContactMeToVisited }) {
 
   return (
     <Wrapper>
-      <div className={classes.wrapper} ref={myRef}>
+      <div className={classes.wrapper}>
         <div className="contactMe"></div>
         <div className={classes.top}>
           <Heading number="04" title="Contact me" />
         </div>
         {error && <h1 className={classes.errorMsg}>{error}</h1>}
-        <div className={classes.bottom}>
+        <div className={classes.bottom} ref={myRef}>
           <form className={`${classes["contact-form"]} ${classes.bg}`}>
             <div className={classes["input-wrapper"]}>
               <label htmlFor="name">Enter your name</label>
