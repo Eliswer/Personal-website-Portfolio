@@ -10,6 +10,7 @@ import jokes from "../public/imgs/projects-imgs/jokes.png";
 import nfs from "../public/imgs/projects-imgs/nfs.png";
 import tiktaktoe from "../public/imgs/projects-imgs/tiktaktoe.png";
 import shoppinglist from "../public/imgs/projects-imgs/shoppinglist.png";
+import password from "../public/imgs/projects-imgs/password.png";
 import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
@@ -35,12 +36,20 @@ const projects = [
     key: "2",
   },
   {
+    title: "Password Generator",
+    img: password,
+    description: "Generate a secure password",
+    githubLink: "https://github.com/Eliswer/password-generator",
+    externalLink: "https://password-generator-theta-ten.vercel.app/",
+    key: "3",
+  },
+  {
     title: "Calculator",
     img: calculator,
     description: "Advanced calculator made with React",
     githubLink: "https://github.com/Eliswer/Calculator-project",
     externalLink: "https://react-calculator-dcknhdcbj-eliswer.vercel.app/",
-    key: "3",
+    key: "4",
   },
   {
     title: "Weather app",
@@ -48,7 +57,7 @@ const projects = [
     description: "Search for your city and display the weather data",
     githubLink: "https://github.com/Eliswer/Weather-app",
     externalLink: "",
-    key: "4",
+    key: "5",
   },
   {
     title: "Dad jokes",
@@ -56,25 +65,24 @@ const projects = [
     description: "Get a new joke after every button click",
     githubLink: "https://github.com/Eliswer/random-dad-jokes",
     externalLink: "https://random-dad-jokes-psi.vercel.app/",
-    key: "5",
+    key: "6",
   },
   {
     title: "NFS box hover effects",
     img: nfs,
-    description:
-      "Get a beautiful effect on hover like on original NFS websites",
+    description: "Beautiful effect on hover like on original NFS website",
     githubLink: "https://github.com/Eliswer/need-for-speed-box-hover-effect",
     externalLink:
       "https://need-for-speed-box-hover-effect-82yaqfhc0-eliswer.vercel.app/",
-    key: "6",
+    key: "7",
   },
   {
     title: "Tik tak toe",
     img: tiktaktoe,
-    description: "Choose a player image and play against your friend",
+    description: "Choose a player img and play against your friend",
     githubLink: "https://github.com/Eliswer/Tik-tak-toe",
     externalLink: "https://tik-tak-toe-six-alpha.vercel.app/",
-    key: "7",
+    key: "8",
   },
 ];
 
