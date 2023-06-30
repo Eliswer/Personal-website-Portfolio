@@ -11,6 +11,7 @@ import nfs from "../public/imgs/projects-imgs/nfs.png";
 import tiktaktoe from "../public/imgs/projects-imgs/tiktaktoe.png";
 import shoppinglist from "../public/imgs/projects-imgs/shoppinglist.png";
 import password from "../public/imgs/projects-imgs/password.png";
+import weatherApp from "../public/imgs/projects-imgs/weatherapp.png";
 import placeholder from "../public/imgs/600x400.svg";
 
 import AwesomeSlider from "react-awesome-slider";
@@ -44,19 +45,19 @@ const projects = [
     key: "3",
   },
   {
+    title: "Weather app",
+    img: weatherApp,
+    description: "Search for your city and display the weather data",
+    githubLink: "https://github.com/Eliswer/Weather-app",
+    externalLink: "",
+    key: "4",
+  },
+  {
     title: "Calculator",
     img: calculator,
     description: "Advanced calculator made with React",
     githubLink: "https://github.com/Eliswer/Calculator-project",
     externalLink: "https://react-calculator-dcknhdcbj-eliswer.vercel.app/",
-    key: "4",
-  },
-  {
-    title: "Weather app",
-    img: placeholder,
-    description: "Search for your city and display the weather data",
-    githubLink: "https://github.com/Eliswer/Weather-app",
-    externalLink: "",
     key: "5",
   },
   {
